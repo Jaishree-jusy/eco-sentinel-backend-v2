@@ -2,7 +2,7 @@
 from flask import Blueprint, jsonify, request
 import os
 import json
-from pathlib import Path
+from pathlib import Path, PureWindowsPath
 
 from app.database.queries import get_summary
 
@@ -41,23 +41,23 @@ def _load_json(path):
 
 
 def _resolve_manifest_path(project_root, value):
-    """Resolve paths saved by both the old and current project folders."""
+    # Resolve paths saved by Windows machines, even when running on Linux.
+    value = str(value)
     path = Path(value)
 
-    # Keep the original file when it exists.
     if path.is_file():
         return path
 
+    filename = PureWindowsPath(value).name
+
     candidates = []
 
-    if not path.is_absolute():
+    if not path.is_absolute() and "\\" not in value:
         candidates.append(project_root / path)
 
-    # Old manifests may contain absolute paths from another project copy.
-    # Resolve their filenames against the current project's data folders.
     candidates.extend([
-        project_root / "data" / "alerts" / path.name,
-        project_root / "data" / "boundary_check" / path.name,
+        project_root / "data" / "alerts" / filename,
+        project_root / "data" / "boundary_check" / filename,
     ])
 
     for candidate in candidates:
@@ -68,7 +68,6 @@ def _resolve_manifest_path(project_root, value):
     raise FileNotFoundError(
         f"Manifest data file not found: {value}. Checked: {checked}"
     )
-
 
 def _load_alert_list(path):
     data = _load_json(path)
