@@ -1,0 +1,23 @@
+{
+  "alert_id": "ALERT-IN-3cdd8e43b0fc",
+  "date_time": "2026-09-15T06:52:37.819798+00:00",
+  "location": {
+    "latitude": 12.850696,
+    "longitude": 75.078083
+  },
+  "area_lost_ha": 0.368,
+  "severity_level": "unknown",
+  "region_division": "Dakshina Kannada",
+  "polygon_id": "LOSS-3e938e67c007",
+  "ml_confidence": 0.6377192139625549,
+  "detection_class": "random_forest_deforestation",
+  "legality_status": "legal_status_unknown",
+  "matched_authorization_id": null,
+  "final_category": "legal_status_unknown",
+  "evidence_generated_at": "2026-09-15T07:57:50.473534+00:00",
+  "evidence_files": {
+    "map_snapshot": "C:\\Users\\jaish\\Downloads\\final-eco-sentinel\\eco-sentinel\\data\\evidence_store\\ALERT-IN-3cdd8e43b0fc\\map_snapshot.png",
+    "geojson": "C:\\Users\\jaish\\Downloads\\final-eco-sentinel\\eco-sentinel\\data\\evidence_store\\ALERT-IN-3cdd8e43b0fc\\polygon.geojson",
+    "pdf_report": "C:\\Users\\jaish\\Downloads\\final-eco-sentinel\\eco-sentinel\\data\\evidence_store\\ALERT-IN-3cdd8e43b0fc\\report.pdf"
+  }
+}

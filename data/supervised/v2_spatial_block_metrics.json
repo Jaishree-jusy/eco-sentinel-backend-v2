@@ -1,0 +1,1273 @@
+{
+  "model": "RandomForest (spatial-block, leak-free)",
+  "random_seed": 42,
+  "block_size": 64,
+  "winning_feature_set": "base_10_plus_phenology",
+  "features": [
+    "delta_B1",
+    "delta_B4",
+    "delta_B5",
+    "delta_B9",
+    "delta_B11",
+    "delta_B12",
+    "delta_ndvi",
+    "delta_nbr",
+    "delta_ndwi",
+    "delta_ndmi",
+    "delta_snbr",
+    "nbr_change_zscore",
+    "nbr_local_median_2023",
+    "nbr_local_median_2025",
+    "snbr_2023",
+    "snbr_2025"
+  ],
+  "hyperparameters": {
+    "n_estimators": 300,
+    "min_samples_leaf": 2,
+    "max_features": "sqrt",
+    "max_depth": 30,
+    "class_weight": null
+  },
+  "threshold": 0.46000000000000024,
+  "validation_accuracy": 0.8234090244615535,
+  "validation_f1": 0.8126163391933816,
+  "validation_auc": 0.8868125813990367,
+  "test_accuracy": 0.837013776337115,
+  "test_precision": 0.9135953136441298,
+  "test_recall": 0.7488995598239295,
+  "test_f1": 0.8230896096756459,
+  "test_roc_auc": 0.8912940637888311,
+  "confusion_matrix": [
+    [
+      4520,
+      354
+    ],
+    [
+      1255,
+      3743
+    ]
+  ],
+  "feature_importance": {
+    "delta_B12": 0.14240070632698584,
+    "delta_nbr": 0.13972922292579457,
+    "delta_B11": 0.10084696919123758,
+    "delta_ndmi": 0.09950836202955857,
+    "nbr_change_zscore": 0.06787029101148107,
+    "delta_B1": 0.051585625601569686,
+    "delta_B5": 0.047235521692211326,
+    "delta_snbr": 0.04708053513620485,
+    "nbr_local_median_2023": 0.046066661602386635,
+    "delta_B9": 0.045500650398458145,
+    "delta_ndvi": 0.041416086757208474,
+    "nbr_local_median_2025": 0.03978336593513691,
+    "delta_B4": 0.037103168318041564,
+    "snbr_2025": 0.03419666411261087,
+    "snbr_2023": 0.03069806996570552,
+    "delta_ndwi": 0.028978098995408454
+  },
+  "n_search_trials": 75,
+  "search_results": [
+    {
+      "trial": 1,
+      "feature_set": "base_10",
+      "n_features": 10,
+      "params": {
+        "n_estimators": 300,
+        "min_samples_leaf": 2,
+        "max_features": 0.7,
+        "max_depth": null,
+        "class_weight": "balanced"
+      },
+      "threshold": 0.5600000000000003,
+      "val_accuracy": 0.8066465256797583,
+      "val_f1": 0.78839590443686,
+      "val_auc": 0.8587852186086831
+    },
+    {
+      "trial": 2,
+      "feature_set": "base_10",
+      "n_features": 10,
+      "params": {
+        "n_estimators": 300,
+        "min_samples_leaf": 4,
+        "max_features": 1.0,
+        "max_depth": null,
+        "class_weight": "balanced"
+      },
+      "threshold": 0.5300000000000002,
+      "val_accuracy": 0.8070363512328234,
+      "val_f1": 0.7904318374259103,
+      "val_auc": 0.8593691866327697
+    },
+    {
+      "trial": 3,
+      "feature_set": "base_10",
+      "n_features": 10,
+      "params": {
+        "n_estimators": 300,
+        "min_samples_leaf": 2,
+        "max_features": "sqrt",
+        "max_depth": 30,
+        "class_weight": "balanced"
+      },
+      "threshold": 0.5600000000000003,
+      "val_accuracy": 0.8076210895624208,
+      "val_f1": 0.7893276414087513,
+      "val_auc": 0.8631425389777053
+    },
+    {
+      "trial": 4,
+      "feature_set": "base_10",
+      "n_features": 10,
+      "params": {
+        "n_estimators": 300,
+        "min_samples_leaf": 4,
+        "max_features": 0.7,
+        "max_depth": 40,
+        "class_weight": "balanced"
+      },
+      "threshold": 0.5700000000000003,
+      "val_accuracy": 0.8079134587272195,
+      "val_f1": 0.7896253602305475,
+      "val_auc": 0.8607930773771144
+    },
+    {
+      "trial": 5,
+      "feature_set": "base_10",
+      "n_features": 10,
+      "params": {
+        "n_estimators": 300,
+        "min_samples_leaf": 4,
+        "max_features": 0.7,
+        "max_depth": 20,
+        "class_weight": null
+      },
+      "threshold": 0.5400000000000003,
+      "val_accuracy": 0.8071338076210895,
+      "val_f1": 0.7898035050451407,
+      "val_auc": 0.8622922813823715
+    },
+    {
+      "trial": 6,
+      "feature_set": "base_10",
+      "n_features": 10,
+      "params": {
+        "n_estimators": 300,
+        "min_samples_leaf": 2,
+        "max_features": "sqrt",
+        "max_depth": 20,
+        "class_weight": "balanced"
+      },
+      "threshold": 0.5700000000000003,
+      "val_accuracy": 0.807718545950687,
+      "val_f1": 0.7888258589318207,
+      "val_auc": 0.8642681077479435
+    },
+    {
+      "trial": 7,
+      "feature_set": "base_10",
+      "n_features": 10,
+      "params": {
+        "n_estimators": 800,
+        "min_samples_leaf": 1,
+        "max_features": 1.0,
+        "max_depth": 40,
+        "class_weight": "balanced"
+      },
+      "threshold": 0.5200000000000002,
+      "val_accuracy": 0.8054770490205633,
+      "val_f1": 0.7884248463006148,
+      "val_auc": 0.8577504368625923
+    },
+    {
+      "trial": 8,
+      "feature_set": "base_10",
+      "n_features": 10,
+      "params": {
+        "n_estimators": 500,
+        "min_samples_leaf": 1,
+        "max_features": 1.0,
+        "max_depth": 40,
+        "class_weight": null
+      },
+      "threshold": 0.5200000000000002,
+      "val_accuracy": 0.8056719617970958,
+      "val_f1": 0.7889053567647681,
+      "val_auc": 0.8570335048656135
+    },
+    {
+      "trial": 9,
+      "feature_set": "base_10",
+      "n_features": 10,
+      "params": {
+        "n_estimators": 500,
+        "min_samples_leaf": 4,
+        "max_features": 0.7,
+        "max_depth": null,
+        "class_weight": "balanced"
+      },
+      "threshold": 0.5600000000000003,
+      "val_accuracy": 0.8070363512328234,
+      "val_f1": 0.7890924584576055,
+      "val_auc": 0.8609033160445909
+    },
+    {
+      "trial": 10,
+      "feature_set": "base_10",
+      "n_features": 10,
+      "params": {
+        "n_estimators": 500,
+        "min_samples_leaf": 2,
+        "max_features": "sqrt",
+        "max_depth": 30,
+        "class_weight": "balanced"
+      },
+      "threshold": 0.5700000000000003,
+      "val_accuracy": 0.8080109151154858,
+      "val_f1": 0.7891695205479452,
+      "val_auc": 0.8625101892732447
+    },
+    {
+      "trial": 11,
+      "feature_set": "base_10",
+      "n_features": 10,
+      "params": {
+        "n_estimators": 300,
+        "min_samples_leaf": 4,
+        "max_features": 1.0,
+        "max_depth": 30,
+        "class_weight": "balanced"
+      },
+      "threshold": 0.5300000000000002,
+      "val_accuracy": 0.807328720397622,
+      "val_f1": 0.7908157866892392,
+      "val_auc": 0.8594694901164717
+    },
+    {
+      "trial": 12,
+      "feature_set": "base_10",
+      "n_features": 10,
+      "params": {
+        "n_estimators": 300,
+        "min_samples_leaf": 2,
+        "max_features": "sqrt",
+        "max_depth": 30,
+        "class_weight": null
+      },
+      "threshold": 0.5900000000000003,
+      "val_accuracy": 0.8078160023389533,
+      "val_f1": 0.7880481513327601,
+      "val_auc": 0.8627377278211869
+    },
+    {
+      "trial": 13,
+      "feature_set": "base_10",
+      "n_features": 10,
+      "params": {
+        "n_estimators": 500,
+        "min_samples_leaf": 1,
+        "max_features": "sqrt",
+        "max_depth": null,
+        "class_weight": "balanced"
+      },
+      "threshold": 0.5800000000000003,
+      "val_accuracy": 0.8075236331741545,
+      "val_f1": 0.788021895459912,
+      "val_auc": 0.8617707223000415
+    },
+    {
+      "trial": 14,
+      "feature_set": "base_10",
+      "n_features": 10,
+      "params": {
+        "n_estimators": 300,
+        "min_samples_leaf": 1,
+        "max_features": 0.7,
+        "max_depth": 20,
+        "class_weight": null
+      },
+      "threshold": 0.5600000000000003,
+      "val_accuracy": 0.8065490692914921,
+      "val_f1": 0.7876323954209907,
+      "val_auc": 0.862535674351931
+    },
+    {
+      "trial": 15,
+      "feature_set": "base_10",
+      "n_features": 10,
+      "params": {
+        "n_estimators": 500,
+        "min_samples_leaf": 2,
+        "max_features": 0.7,
+        "max_depth": 40,
+        "class_weight": null
+      },
+      "threshold": 0.5500000000000003,
+      "val_accuracy": 0.8063541565149596,
+      "val_f1": 0.78850452368281,
+      "val_auc": 0.859374496817201
+    },
+    {
+      "trial": 16,
+      "feature_set": "base_10",
+      "n_features": 10,
+      "params": {
+        "n_estimators": 800,
+        "min_samples_leaf": 2,
+        "max_features": 0.7,
+        "max_depth": 40,
+        "class_weight": "balanced"
+      },
+      "threshold": 0.5500000000000003,
+      "val_accuracy": 0.8067439820680246,
+      "val_f1": 0.7887053809270111,
+      "val_auc": 0.8591871367614969
+    },
+    {
+      "trial": 17,
+      "feature_set": "base_10",
+      "n_features": 10,
+      "params": {
+        "n_estimators": 500,
+        "min_samples_leaf": 1,
+        "max_features": 0.7,
+        "max_depth": 40,
+        "class_weight": "balanced"
+      },
+      "threshold": 0.5200000000000002,
+      "val_accuracy": 0.8065490692914921,
+      "val_f1": 0.789791379858096,
+      "val_auc": 0.8586759125542428
+    },
+    {
+      "trial": 18,
+      "feature_set": "base_10",
+      "n_features": 10,
+      "params": {
+        "n_estimators": 300,
+        "min_samples_leaf": 1,
+        "max_features": 1.0,
+        "max_depth": 20,
+        "class_weight": null
+      },
+      "threshold": 0.5200000000000002,
+      "val_accuracy": 0.8067439820680246,
+      "val_f1": 0.7899586908166508,
+      "val_auc": 0.8600240713134548
+    },
+    {
+      "trial": 19,
+      "feature_set": "base_10",
+      "n_features": 10,
+      "params": {
+        "n_estimators": 500,
+        "min_samples_leaf": 1,
+        "max_features": 1.0,
+        "max_depth": 30,
+        "class_weight": "balanced"
+      },
+      "threshold": 0.5100000000000002,
+      "val_accuracy": 0.8062567001266933,
+      "val_f1": 0.7899408284023669,
+      "val_auc": 0.8573123561634721
+    },
+    {
+      "trial": 20,
+      "feature_set": "base_10",
+      "n_features": 10,
+      "params": {
+        "n_estimators": 300,
+        "min_samples_leaf": 2,
+        "max_features": 0.7,
+        "max_depth": 40,
+        "class_weight": null
+      },
+      "threshold": 0.5200000000000002,
+      "val_accuracy": 0.8063541565149596,
+      "val_f1": 0.789891085968066,
+      "val_auc": 0.8592064551743921
+    },
+    {
+      "trial": 21,
+      "feature_set": "base_10",
+      "n_features": 10,
+      "params": {
+        "n_estimators": 300,
+        "min_samples_leaf": 4,
+        "max_features": 1.0,
+        "max_depth": 40,
+        "class_weight": "balanced"
+      },
+      "threshold": 0.5300000000000002,
+      "val_accuracy": 0.8070363512328234,
+      "val_f1": 0.7904318374259103,
+      "val_auc": 0.8593691866327697
+    },
+    {
+      "trial": 22,
+      "feature_set": "base_10",
+      "n_features": 10,
+      "params": {
+        "n_estimators": 500,
+        "min_samples_leaf": 4,
+        "max_features": "sqrt",
+        "max_depth": 30,
+        "class_weight": "balanced"
+      },
+      "threshold": 0.5500000000000003,
+      "val_accuracy": 0.8075236331741545,
+      "val_f1": 0.7899606508561098,
+      "val_auc": 0.8631229541039427
+    },
+    {
+      "trial": 23,
+      "feature_set": "base_10",
+      "n_features": 10,
+      "params": {
+        "n_estimators": 500,
+        "min_samples_leaf": 4,
+        "max_features": 1.0,
+        "max_depth": 40,
+        "class_weight": null
+      },
+      "threshold": 0.5100000000000002,
+      "val_accuracy": 0.8063541565149596,
+      "val_f1": 0.7907760345372222,
+      "val_auc": 0.8592448636051532
+    },
+    {
+      "trial": 24,
+      "feature_set": "base_10",
+      "n_features": 10,
+      "params": {
+        "n_estimators": 500,
+        "min_samples_leaf": 4,
+        "max_features": 1.0,
+        "max_depth": 20,
+        "class_weight": null
+      },
+      "threshold": 0.5200000000000002,
+      "val_accuracy": 0.8066465256797583,
+      "val_f1": 0.7904520490071821,
+      "val_auc": 0.8606237414958063
+    },
+    {
+      "trial": 25,
+      "feature_set": "base_10",
+      "n_features": 10,
+      "params": {
+        "n_estimators": 800,
+        "min_samples_leaf": 2,
+        "max_features": 1.0,
+        "max_depth": null,
+        "class_weight": null
+      },
+      "threshold": 0.5100000000000002,
+      "val_accuracy": 0.8056719617970958,
+      "val_f1": 0.7897068129086691,
+      "val_auc": 0.8584702237974373
+    },
+    {
+      "trial": 26,
+      "feature_set": "base_10_plus_phenology",
+      "n_features": 16,
+      "params": {
+        "n_estimators": 300,
+        "min_samples_leaf": 2,
+        "max_features": 0.7,
+        "max_depth": null,
+        "class_weight": "balanced"
+      },
+      "threshold": 0.49000000000000027,
+      "val_accuracy": 0.8212649839196959,
+      "val_f1": 0.8088388576193454,
+      "val_auc": 0.883458828788767
+    },
+    {
+      "trial": 27,
+      "feature_set": "base_10_plus_phenology",
+      "n_features": 16,
+      "params": {
+        "n_estimators": 300,
+        "min_samples_leaf": 4,
+        "max_features": 1.0,
+        "max_depth": null,
+        "class_weight": "balanced"
+      },
+      "threshold": 0.45000000000000023,
+      "val_accuracy": 0.820485332813566,
+      "val_f1": 0.8109993843628155,
+      "val_auc": 0.8844112931597135
+    },
+    {
+      "trial": 28,
+      "feature_set": "base_10_plus_phenology",
+      "n_features": 16,
+      "params": {
+        "n_estimators": 300,
+        "min_samples_leaf": 2,
+        "max_features": "sqrt",
+        "max_depth": 30,
+        "class_weight": "balanced"
+      },
+      "threshold": 0.4200000000000002,
+      "val_accuracy": 0.8228242861319559,
+      "val_f1": 0.8147166734610681,
+      "val_auc": 0.8862829142931664
+    },
+    {
+      "trial": 29,
+      "feature_set": "base_10_plus_phenology",
+      "n_features": 16,
+      "params": {
+        "n_estimators": 300,
+        "min_samples_leaf": 4,
+        "max_features": 0.7,
+        "max_depth": 40,
+        "class_weight": "balanced"
+      },
+      "threshold": 0.46000000000000024,
+      "val_accuracy": 0.8215573530844947,
+      "val_f1": 0.8113732358092098,
+      "val_auc": 0.8843817731021761
+    },
+    {
+      "trial": 30,
+      "feature_set": "base_10_plus_phenology",
+      "n_features": 16,
+      "params": {
+        "n_estimators": 300,
+        "min_samples_leaf": 4,
+        "max_features": 0.7,
+        "max_depth": 20,
+        "class_weight": null
+      },
+      "threshold": 0.4400000000000002,
+      "val_accuracy": 0.8228242861319559,
+      "val_f1": 0.8133853418189283,
+      "val_auc": 0.8876349938337148
+    },
+    {
+      "trial": 31,
+      "feature_set": "base_10_plus_phenology",
+      "n_features": 16,
+      "params": {
+        "n_estimators": 300,
+        "min_samples_leaf": 2,
+        "max_features": "sqrt",
+        "max_depth": 20,
+        "class_weight": "balanced"
+      },
+      "threshold": 0.4300000000000002,
+      "val_accuracy": 0.8231166552967547,
+      "val_f1": 0.8137124089089602,
+      "val_auc": 0.8902692069370879
+    },
+    {
+      "trial": 32,
+      "feature_set": "base_10_plus_phenology",
+      "n_features": 16,
+      "params": {
+        "n_estimators": 800,
+        "min_samples_leaf": 1,
+        "max_features": 1.0,
+        "max_depth": 40,
+        "class_weight": "balanced"
+      },
+      "threshold": 0.4300000000000002,
+      "val_accuracy": 0.8210700711431634,
+      "val_f1": 0.8128440366972477,
+      "val_auc": 0.8831326806869239
+    },
+    {
+      "trial": 33,
+      "feature_set": "base_10_plus_phenology",
+      "n_features": 16,
+      "params": {
+        "n_estimators": 500,
+        "min_samples_leaf": 1,
+        "max_features": 1.0,
+        "max_depth": 40,
+        "class_weight": null
+      },
+      "threshold": 0.4400000000000002,
+      "val_accuracy": 0.820095507260501,
+      "val_f1": 0.8110929185427753,
+      "val_auc": 0.8823971725608953
+    },
+    {
+      "trial": 34,
+      "feature_set": "base_10_plus_phenology",
+      "n_features": 16,
+      "params": {
+        "n_estimators": 500,
+        "min_samples_leaf": 4,
+        "max_features": 0.7,
+        "max_depth": null,
+        "class_weight": "balanced"
+      },
+      "threshold": 0.4400000000000002,
+      "val_accuracy": 0.8225319169671572,
+      "val_f1": 0.8137465480208653,
+      "val_auc": 0.8849790261038009
+    },
+    {
+      "trial": 35,
+      "feature_set": "base_10_plus_phenology",
+      "n_features": 16,
+      "params": {
+        "n_estimators": 500,
+        "min_samples_leaf": 2,
+        "max_features": "sqrt",
+        "max_depth": 30,
+        "class_weight": "balanced"
+      },
+      "threshold": 0.4300000000000002,
+      "val_accuracy": 0.8233115680732872,
+      "val_f1": 0.8144509262102139,
+      "val_auc": 0.8866406380078107
+    },
+    {
+      "trial": 36,
+      "feature_set": "base_10_plus_phenology",
+      "n_features": 16,
+      "params": {
+        "n_estimators": 300,
+        "min_samples_leaf": 4,
+        "max_features": 1.0,
+        "max_depth": 30,
+        "class_weight": "balanced"
+      },
+      "threshold": 0.45000000000000023,
+      "val_accuracy": 0.820485332813566,
+      "val_f1": 0.811115668580804,
+      "val_auc": 0.8846672859217228
+    },
+    {
+      "trial": 37,
+      "feature_set": "base_10_plus_phenology",
+      "n_features": 16,
+      "params": {
+        "n_estimators": 300,
+        "min_samples_leaf": 2,
+        "max_features": "sqrt",
+        "max_depth": 30,
+        "class_weight": null
+      },
+      "threshold": 0.46000000000000024,
+      "val_accuracy": 0.8234090244615535,
+      "val_f1": 0.8126163391933816,
+      "val_auc": 0.8868125813990367
+    },
+    {
+      "trial": 38,
+      "feature_set": "base_10_plus_phenology",
+      "n_features": 16,
+      "params": {
+        "n_estimators": 500,
+        "min_samples_leaf": 1,
+        "max_features": "sqrt",
+        "max_depth": null,
+        "class_weight": "balanced"
+      },
+      "threshold": 0.45000000000000023,
+      "val_accuracy": 0.8227268297436897,
+      "val_f1": 0.8123000722319678,
+      "val_auc": 0.8861823633815165
+    },
+    {
+      "trial": 39,
+      "feature_set": "base_10_plus_phenology",
+      "n_features": 16,
+      "params": {
+        "n_estimators": 300,
+        "min_samples_leaf": 1,
+        "max_features": 0.7,
+        "max_depth": 20,
+        "class_weight": null
+      },
+      "threshold": 0.4000000000000002,
+      "val_accuracy": 0.8217522658610272,
+      "val_f1": 0.8148972776034814,
+      "val_auc": 0.8878885123162401
+    },
+    {
+      "trial": 40,
+      "feature_set": "base_10_plus_phenology",
+      "n_features": 16,
+      "params": {
+        "n_estimators": 500,
+        "min_samples_leaf": 2,
+        "max_features": 0.7,
+        "max_depth": 40,
+        "class_weight": null
+      },
+      "threshold": 0.4200000000000002,
+      "val_accuracy": 0.8219471786375597,
+      "val_f1": 0.8141970914268281,
+      "val_auc": 0.8844546882152808
+    },
+    {
+      "trial": 41,
+      "feature_set": "base_10_plus_phenology",
+      "n_features": 16,
+      "params": {
+        "n_estimators": 800,
+        "min_samples_leaf": 2,
+        "max_features": 0.7,
+        "max_depth": 40,
+        "class_weight": "balanced"
+      },
+      "threshold": 0.48000000000000026,
+      "val_accuracy": 0.8215573530844947,
+      "val_f1": 0.809884747170595,
+      "val_auc": 0.8840565195475311
+    },
+    {
+      "trial": 42,
+      "feature_set": "base_10_plus_phenology",
+      "n_features": 16,
+      "params": {
+        "n_estimators": 500,
+        "min_samples_leaf": 1,
+        "max_features": 0.7,
+        "max_depth": 40,
+        "class_weight": "balanced"
+      },
+      "threshold": 0.45000000000000023,
+      "val_accuracy": 0.8207777019783646,
+      "val_f1": 0.8109386244474144,
+      "val_auc": 0.883005369491007
+    },
+    {
+      "trial": 43,
+      "feature_set": "base_10_plus_phenology",
+      "n_features": 16,
+      "params": {
+        "n_estimators": 300,
+        "min_samples_leaf": 1,
+        "max_features": 1.0,
+        "max_depth": 20,
+        "class_weight": null
+      },
+      "threshold": 0.4300000000000002,
+      "val_accuracy": 0.8218497222492934,
+      "val_f1": 0.81312615007156,
+      "val_auc": 0.8855119288059196
+    },
+    {
+      "trial": 44,
+      "feature_set": "base_10_plus_phenology",
+      "n_features": 16,
+      "params": {
+        "n_estimators": 500,
+        "min_samples_leaf": 1,
+        "max_features": 1.0,
+        "max_depth": 30,
+        "class_weight": "balanced"
+      },
+      "threshold": 0.4400000000000002,
+      "val_accuracy": 0.8205827892018321,
+      "val_f1": 0.8117394416607016,
+      "val_auc": 0.8832703648237548
+    },
+    {
+      "trial": 45,
+      "feature_set": "base_10_plus_phenology",
+      "n_features": 16,
+      "params": {
+        "n_estimators": 300,
+        "min_samples_leaf": 2,
+        "max_features": 0.7,
+        "max_depth": 40,
+        "class_weight": null
+      },
+      "threshold": 0.4300000000000002,
+      "val_accuracy": 0.8220446350258259,
+      "val_f1": 0.8138254486133768,
+      "val_auc": 0.8846411917896249
+    },
+    {
+      "trial": 46,
+      "feature_set": "base_10_plus_phenology",
+      "n_features": 16,
+      "params": {
+        "n_estimators": 300,
+        "min_samples_leaf": 4,
+        "max_features": 1.0,
+        "max_depth": 40,
+        "class_weight": "balanced"
+      },
+      "threshold": 0.45000000000000023,
+      "val_accuracy": 0.8205827892018321,
+      "val_f1": 0.8111213706781574,
+      "val_auc": 0.8844163178503581
+    },
+    {
+      "trial": 47,
+      "feature_set": "base_10_plus_phenology",
+      "n_features": 16,
+      "params": {
+        "n_estimators": 500,
+        "min_samples_leaf": 4,
+        "max_features": "sqrt",
+        "max_depth": 30,
+        "class_weight": "balanced"
+      },
+      "threshold": 0.46000000000000024,
+      "val_accuracy": 0.8229217425202222,
+      "val_f1": 0.8123127776056193,
+      "val_auc": 0.8874334732861942
+    },
+    {
+      "trial": 48,
+      "feature_set": "base_10_plus_phenology",
+      "n_features": 16,
+      "params": {
+        "n_estimators": 500,
+        "min_samples_leaf": 4,
+        "max_features": 1.0,
+        "max_depth": 40,
+        "class_weight": null
+      },
+      "threshold": 0.45000000000000023,
+      "val_accuracy": 0.820485332813566,
+      "val_f1": 0.8108052588331964,
+      "val_auc": 0.8842517782646653
+    },
+    {
+      "trial": 49,
+      "feature_set": "base_10_plus_phenology",
+      "n_features": 16,
+      "params": {
+        "n_estimators": 500,
+        "min_samples_leaf": 4,
+        "max_features": 1.0,
+        "max_depth": 20,
+        "class_weight": null
+      },
+      "threshold": 0.46000000000000024,
+      "val_accuracy": 0.8211675275314296,
+      "val_f1": 0.8101789593462294,
+      "val_auc": 0.8864103396865979
+    },
+    {
+      "trial": 50,
+      "feature_set": "base_10_plus_phenology",
+      "n_features": 16,
+      "params": {
+        "n_estimators": 800,
+        "min_samples_leaf": 2,
+        "max_features": 1.0,
+        "max_depth": null,
+        "class_weight": null
+      },
+      "threshold": 0.4400000000000002,
+      "val_accuracy": 0.8203878764252996,
+      "val_f1": 0.8113420002047292,
+      "val_auc": 0.8832327748085155
+    },
+    {
+      "trial": 51,
+      "feature_set": "phenology_only",
+      "n_features": 6,
+      "params": {
+        "n_estimators": 300,
+        "min_samples_leaf": 2,
+        "max_features": 0.7,
+        "max_depth": null,
+        "class_weight": "balanced"
+      },
+      "threshold": 0.6100000000000003,
+      "val_accuracy": 0.8097651301042783,
+      "val_f1": 0.7922962332411151,
+      "val_auc": 0.8705409391618831
+    },
+    {
+      "trial": 52,
+      "feature_set": "phenology_only",
+      "n_features": 6,
+      "params": {
+        "n_estimators": 300,
+        "min_samples_leaf": 4,
+        "max_features": 1.0,
+        "max_depth": null,
+        "class_weight": "balanced"
+      },
+      "threshold": 0.5800000000000003,
+      "val_accuracy": 0.8107396939869408,
+      "val_f1": 0.7946277495769881,
+      "val_auc": 0.8711114509121602
+    },
+    {
+      "trial": 53,
+      "feature_set": "phenology_only",
+      "n_features": 6,
+      "params": {
+        "n_estimators": 300,
+        "min_samples_leaf": 2,
+        "max_features": "sqrt",
+        "max_depth": 30,
+        "class_weight": "balanced"
+      },
+      "threshold": 0.5800000000000003,
+      "val_accuracy": 0.8105447812104083,
+      "val_f1": 0.7938494167550371,
+      "val_auc": 0.8736729011657816
+    },
+    {
+      "trial": 54,
+      "feature_set": "phenology_only",
+      "n_features": 6,
+      "params": {
+        "n_estimators": 300,
+        "min_samples_leaf": 4,
+        "max_features": 0.7,
+        "max_depth": 40,
+        "class_weight": "balanced"
+      },
+      "threshold": 0.5500000000000003,
+      "val_accuracy": 0.8107396939869408,
+      "val_f1": 0.7960512497374501,
+      "val_auc": 0.8722603159753873
+    },
+    {
+      "trial": 55,
+      "feature_set": "phenology_only",
+      "n_features": 6,
+      "params": {
+        "n_estimators": 300,
+        "min_samples_leaf": 4,
+        "max_features": 0.7,
+        "max_depth": 20,
+        "class_weight": null
+      },
+      "threshold": 0.46000000000000024,
+      "val_accuracy": 0.8117142578696034,
+      "val_f1": 0.801275457724748,
+      "val_auc": 0.8746626890910997
+    },
+    {
+      "trial": 56,
+      "feature_set": "phenology_only",
+      "n_features": 6,
+      "params": {
+        "n_estimators": 300,
+        "min_samples_leaf": 2,
+        "max_features": "sqrt",
+        "max_depth": 20,
+        "class_weight": "balanced"
+      },
+      "threshold": 0.6000000000000003,
+      "val_accuracy": 0.8111295195400059,
+      "val_f1": 0.793213828425096,
+      "val_auc": 0.8765037433564644
+    },
+    {
+      "trial": 57,
+      "feature_set": "phenology_only",
+      "n_features": 6,
+      "params": {
+        "n_estimators": 800,
+        "min_samples_leaf": 1,
+        "max_features": 1.0,
+        "max_depth": 40,
+        "class_weight": "balanced"
+      },
+      "threshold": 0.5800000000000003,
+      "val_accuracy": 0.8072312640093559,
+      "val_f1": 0.7909090909090909,
+      "val_auc": 0.8683551987314636
+    },
+    {
+      "trial": 58,
+      "feature_set": "phenology_only",
+      "n_features": 6,
+      "params": {
+        "n_estimators": 500,
+        "min_samples_leaf": 1,
+        "max_features": 1.0,
+        "max_depth": 40,
+        "class_weight": null
+      },
+      "threshold": 0.5800000000000003,
+      "val_accuracy": 0.807328720397622,
+      "val_f1": 0.7910368882781947,
+      "val_auc": 0.8680721601914011
+    },
+    {
+      "trial": 59,
+      "feature_set": "phenology_only",
+      "n_features": 6,
+      "params": {
+        "n_estimators": 500,
+        "min_samples_leaf": 4,
+        "max_features": 0.7,
+        "max_depth": null,
+        "class_weight": "balanced"
+      },
+      "threshold": 0.6100000000000003,
+      "val_accuracy": 0.8106422375986746,
+      "val_f1": 0.7929233720558457,
+      "val_auc": 0.8723906914712805
+    },
+    {
+      "trial": 60,
+      "feature_set": "phenology_only",
+      "n_features": 6,
+      "params": {
+        "n_estimators": 500,
+        "min_samples_leaf": 2,
+        "max_features": "sqrt",
+        "max_depth": 30,
+        "class_weight": "balanced"
+      },
+      "threshold": 0.5700000000000003,
+      "val_accuracy": 0.8108371503752071,
+      "val_f1": 0.7948419828770743,
+      "val_auc": 0.8734428693054361
+    },
+    {
+      "trial": 61,
+      "feature_set": "phenology_only",
+      "n_features": 6,
+      "params": {
+        "n_estimators": 300,
+        "min_samples_leaf": 4,
+        "max_features": 1.0,
+        "max_depth": 30,
+        "class_weight": "balanced"
+      },
+      "threshold": 0.5900000000000003,
+      "val_accuracy": 0.8108371503752071,
+      "val_f1": 0.7940146450175104,
+      "val_auc": 0.87121457126789
+    },
+    {
+      "trial": 62,
+      "feature_set": "phenology_only",
+      "n_features": 6,
+      "params": {
+        "n_estimators": 300,
+        "min_samples_leaf": 2,
+        "max_features": "sqrt",
+        "max_depth": 30,
+        "class_weight": null
+      },
+      "threshold": 0.5500000000000003,
+      "val_accuracy": 0.8109346067634734,
+      "val_f1": 0.7960470984020185,
+      "val_auc": 0.873646140881515
+    },
+    {
+      "trial": 63,
+      "feature_set": "phenology_only",
+      "n_features": 6,
+      "params": {
+        "n_estimators": 500,
+        "min_samples_leaf": 1,
+        "max_features": "sqrt",
+        "max_depth": null,
+        "class_weight": "balanced"
+      },
+      "threshold": 0.6000000000000003,
+      "val_accuracy": 0.8105447812104083,
+      "val_f1": 0.7931914893617021,
+      "val_auc": 0.8715716668962037
+    },
+    {
+      "trial": 64,
+      "feature_set": "phenology_only",
+      "n_features": 6,
+      "params": {
+        "n_estimators": 300,
+        "min_samples_leaf": 1,
+        "max_features": 0.7,
+        "max_depth": 20,
+        "class_weight": null
+      },
+      "threshold": 0.5700000000000003,
+      "val_accuracy": 0.8110320631517396,
+      "val_f1": 0.7946192140663065,
+      "val_auc": 0.8721262290602678
+    },
+    {
+      "trial": 65,
+      "feature_set": "phenology_only",
+      "n_features": 6,
+      "params": {
+        "n_estimators": 500,
+        "min_samples_leaf": 2,
+        "max_features": 0.7,
+        "max_depth": 40,
+        "class_weight": null
+      },
+      "threshold": 0.5900000000000003,
+      "val_accuracy": 0.8101549556573433,
+      "val_f1": 0.7934690415606446,
+      "val_auc": 0.8705320888544977
+    },
+    {
+      "trial": 66,
+      "feature_set": "phenology_only",
+      "n_features": 6,
+      "params": {
+        "n_estimators": 800,
+        "min_samples_leaf": 2,
+        "max_features": 0.7,
+        "max_depth": 40,
+        "class_weight": "balanced"
+      },
+      "threshold": 0.5600000000000003,
+      "val_accuracy": 0.8101549556573433,
+      "val_f1": 0.7949905283098295,
+      "val_auc": 0.8703094227338474
+    },
+    {
+      "trial": 67,
+      "feature_set": "phenology_only",
+      "n_features": 6,
+      "params": {
+        "n_estimators": 500,
+        "min_samples_leaf": 1,
+        "max_features": 0.7,
+        "max_depth": 40,
+        "class_weight": "balanced"
+      },
+      "threshold": 0.5800000000000003,
+      "val_accuracy": 0.8086931098333495,
+      "val_f1": 0.7924727772491806,
+      "val_auc": 0.8692241085875236
+    },
+    {
+      "trial": 68,
+      "feature_set": "phenology_only",
+      "n_features": 6,
+      "params": {
+        "n_estimators": 300,
+        "min_samples_leaf": 1,
+        "max_features": 1.0,
+        "max_depth": 20,
+        "class_weight": null
+      },
+      "threshold": 0.5600000000000003,
+      "val_accuracy": 0.8089854789981483,
+      "val_f1": 0.7927241962774958,
+      "val_auc": 0.870742155182698
+    },
+    {
+      "trial": 69,
+      "feature_set": "phenology_only",
+      "n_features": 6,
+      "params": {
+        "n_estimators": 500,
+        "min_samples_leaf": 1,
+        "max_features": 1.0,
+        "max_depth": 30,
+        "class_weight": "balanced"
+      },
+      "threshold": 0.5800000000000003,
+      "val_accuracy": 0.8074261767858883,
+      "val_f1": 0.7908994708994709,
+      "val_auc": 0.868625751676591
+    },
+    {
+      "trial": 70,
+      "feature_set": "phenology_only",
+      "n_features": 6,
+      "params": {
+        "n_estimators": 300,
+        "min_samples_leaf": 2,
+        "max_features": 0.7,
+        "max_depth": 40,
+        "class_weight": null
+      },
+      "threshold": 0.6100000000000003,
+      "val_accuracy": 0.8103498684338758,
+      "val_f1": 0.7927582534611288,
+      "val_auc": 0.87038899936864
+    },
+    {
+      "trial": 71,
+      "feature_set": "phenology_only",
+      "n_features": 6,
+      "params": {
+        "n_estimators": 300,
+        "min_samples_leaf": 4,
+        "max_features": 1.0,
+        "max_depth": 40,
+        "class_weight": "balanced"
+      },
+      "threshold": 0.5900000000000003,
+      "val_accuracy": 0.8107396939869408,
+      "val_f1": 0.7940178192617734,
+      "val_auc": 0.8711131258090418
+    },
+    {
+      "trial": 72,
+      "feature_set": "phenology_only",
+      "n_features": 6,
+      "params": {
+        "n_estimators": 500,
+        "min_samples_leaf": 4,
+        "max_features": "sqrt",
+        "max_depth": 30,
+        "class_weight": "balanced"
+      },
+      "threshold": 0.6000000000000003,
+      "val_accuracy": 0.8122989961992009,
+      "val_f1": 0.7948444823178525,
+      "val_auc": 0.8749567286584068
+    },
+    {
+      "trial": 73,
+      "feature_set": "phenology_only",
+      "n_features": 6,
+      "params": {
+        "n_estimators": 500,
+        "min_samples_leaf": 4,
+        "max_features": 1.0,
+        "max_depth": 40,
+        "class_weight": null
+      },
+      "threshold": 0.5800000000000003,
+      "val_accuracy": 0.8112269759282721,
+      "val_f1": 0.7947005829358771,
+      "val_auc": 0.871114381981703
+    },
+    {
+      "trial": 74,
+      "feature_set": "phenology_only",
+      "n_features": 6,
+      "params": {
+        "n_estimators": 500,
+        "min_samples_leaf": 4,
+        "max_features": 1.0,
+        "max_depth": 20,
+        "class_weight": null
+      },
+      "threshold": 0.5800000000000003,
+      "val_accuracy": 0.8108371503752071,
+      "val_f1": 0.7937081517695823,
+      "val_auc": 0.8730048266721543
+    },
+    {
+      "trial": 75,
+      "feature_set": "phenology_only",
+      "n_features": 6,
+      "params": {
+        "n_estimators": 800,
+        "min_samples_leaf": 2,
+        "max_features": 1.0,
+        "max_depth": null,
+        "class_weight": null
+      },
+      "threshold": 0.5600000000000003,
+      "val_accuracy": 0.8092778481629471,
+      "val_f1": 0.7943247503941145,
+      "val_auc": 0.8693242217420345
+    }
+  ],
+  "dataset": "data\\supervised\\training_samples.csv",
+  "model_path": "data\\supervised\\deforestation_v2_spatial_block.joblib"
+}

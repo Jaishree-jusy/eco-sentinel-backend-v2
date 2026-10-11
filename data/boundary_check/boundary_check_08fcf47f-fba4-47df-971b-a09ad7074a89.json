@@ -1,0 +1,25 @@
+{
+  "run_id": "08fcf47f-fba4-47df-971b-a09ad7074a89",
+  "checked_at": "2026-10-09T16:57:17.354910+00:00",
+  "source_polygon_analysis_run_id": "6f90ca9d-bd10-4a03-b7e4-780ae94898e4",
+  "base_year": 2025,
+  "comparison_year": "2026-09-27",
+  "output_suffix": "live_2026_09_27",
+  "region_column_used": "NAME_2",
+  "inside_forest": {
+    "path": "C:\\Users\\jaish\\Downloads\\final-eco-sentinel\\eco-sentinel(backend)\\data\\boundary_check\\inside_forest_2025_2026-09-27_live_2026_09_27.geojson",
+    "count": 472,
+    "total_area_ha": 338.3364
+  },
+  "outside_forest": {
+    "path": "C:\\Users\\jaish\\Downloads\\final-eco-sentinel\\eco-sentinel(backend)\\data\\boundary_check\\outside_forest_2025_2026-09-27_live_2026_09_27.geojson",
+    "count": 752,
+    "total_area_ha": 325.3862
+  },
+  "unknown_classification": {
+    "path": "C:\\Users\\jaish\\Downloads\\final-eco-sentinel\\eco-sentinel(backend)\\data\\boundary_check\\unknown_classification_2025_2026-09-27_live_2026_09_27.geojson",
+    "count": 0,
+    "total_area_ha": 0.0,
+    "note": "Polygons without WorldCover coverage are kept separate for manual review."
+  }
+}

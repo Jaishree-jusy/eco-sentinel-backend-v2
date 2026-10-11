@@ -1,0 +1,26 @@
+{
+  "run_id": "e0434da8-05a2-426d-a7c5-61fdef872a4e",
+  "detected_at": "2026-10-09T16:40:12.552568+00:00",
+  "source_processing_run_id": "38561928-ea19-4245-8426-801ae7edd992",
+  "base_year": 2025,
+  "comparison_year": "2026-09-27",
+  "region": {
+    "name": "Region 1 (Karnataka AOI)",
+    "bbox": {
+      "left": 74.74998260145473,
+      "bottom": 12.599949838117233,
+      "right": 75.1000560676761,
+      "top": 13.000059465664068
+    }
+  },
+  "loss_mask_path": "C:\\Users\\jaish\\Downloads\\final-eco-sentinel\\eco-sentinel(backend)\\data\\ndvi_processed\\vegetation_loss_mask_2025_2026-09-27.tif",
+  "stats": {
+    "threshold_used": -0.2,
+    "total_pixels": 17357238,
+    "valid_pixels": 2567247,
+    "nodata_pixels": 14789991,
+    "loss_pixels": 110396,
+    "no_loss_pixels": 2456851,
+    "loss_pct_of_valid": 4.3002
+  }
+}

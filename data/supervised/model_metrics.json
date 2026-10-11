@@ -1,0 +1,60 @@
+{
+  "model": "RandomForestClassifier",
+  "random_state": 42,
+  "n_estimators": 300,
+  "test_size": 0.2,
+  "training_samples": 39997,
+  "testing_samples": 10000,
+  "accuracy": 0.8571,
+  "precision": 0.9208107471128918,
+  "recall": 0.7814,
+  "f1_score": 0.8453965162825923,
+  "confusion_matrix": [
+    [
+      4664,
+      336
+    ],
+    [
+      1093,
+      3907
+    ]
+  ],
+  "feature_importance": {
+    "delta_nbr": 0.14148957591794742,
+    "delta_B12": 0.12515770361409576,
+    "delta_B11": 0.1231331421820384,
+    "delta_ndmi": 0.08368917574652002,
+    "delta_ndvi": 0.0712587879620696,
+    "delta_B1": 0.06099451874568287,
+    "delta_B5": 0.05279196740529437,
+    "delta_B9": 0.050032993068347846,
+    "delta_B4": 0.046551990641343986,
+    "delta_B2": 0.0379181824562621,
+    "delta_ndwi": 0.036609737393825836,
+    "delta_B3": 0.03594926476505818,
+    "delta_B6": 0.03534081498156454,
+    "delta_B8A": 0.035199467711868895,
+    "delta_B7": 0.03398791958579657,
+    "delta_B8": 0.029894757822283603
+  },
+  "features": [
+    "delta_B1",
+    "delta_B2",
+    "delta_B3",
+    "delta_B4",
+    "delta_B5",
+    "delta_B6",
+    "delta_B7",
+    "delta_B8",
+    "delta_B8A",
+    "delta_B9",
+    "delta_B11",
+    "delta_B12",
+    "delta_ndvi",
+    "delta_nbr",
+    "delta_ndwi",
+    "delta_ndmi"
+  ],
+  "dataset": ".\\data\\supervised\\training_samples.csv",
+  "model_path": ".\\data\\supervised\\deforestation_random_forest.joblib"
+}

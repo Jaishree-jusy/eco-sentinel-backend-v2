@@ -1,0 +1,40 @@
+{
+  "model": "Clean-Label Random Forest",
+  "random_state": 42,
+  "features": [
+    "delta_B1",
+    "delta_B4",
+    "delta_B5",
+    "delta_B9",
+    "delta_B11",
+    "delta_B12",
+    "delta_ndvi",
+    "delta_nbr",
+    "delta_ndwi",
+    "delta_ndmi"
+  ],
+  "feature_count": 10,
+  "development_samples": 40000,
+  "clean_development_samples": 40000,
+  "testing_samples": 10000,
+  "label_cleaning_rate": 0.0,
+  "decision_threshold": 0.45500000000000024,
+  "validation_accuracy": 0.873625,
+  "accuracy": 0.8874,
+  "precision": 0.907103825136612,
+  "recall": 0.8632,
+  "f1_score": 0.8846075015372002,
+  "roc_auc": 0.94540076,
+  "confusion_matrix": [
+    [
+      4558,
+      442
+    ],
+    [
+      684,
+      4316
+    ]
+  ],
+  "dataset": ".\\data\\supervised\\training_samples.csv",
+  "model_path": ".\\data\\supervised\\deforestation_rf_clean_labels.joblib"
+}

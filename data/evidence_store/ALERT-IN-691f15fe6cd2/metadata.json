@@ -1,0 +1,23 @@
+{
+  "alert_id": "ALERT-IN-691f15fe6cd2",
+  "date_time": "2026-09-15T06:52:37.819798+00:00",
+  "location": {
+    "latitude": 12.699216,
+    "longitude": 74.929084
+  },
+  "area_lost_ha": 0.3488,
+  "severity_level": "unknown",
+  "region_division": "Kasaragod",
+  "polygon_id": "LOSS-616d8ded2b4b",
+  "ml_confidence": 0.6248147487640381,
+  "detection_class": "random_forest_deforestation",
+  "legality_status": "legal_status_unknown",
+  "matched_authorization_id": null,
+  "final_category": "legal_status_unknown",
+  "evidence_generated_at": "2026-09-15T08:17:52.716631+00:00",
+  "evidence_files": {
+    "map_snapshot": "C:\\Users\\jaish\\Downloads\\final-eco-sentinel\\eco-sentinel\\data\\evidence_store\\ALERT-IN-691f15fe6cd2\\map_snapshot.png",
+    "geojson": "C:\\Users\\jaish\\Downloads\\final-eco-sentinel\\eco-sentinel\\data\\evidence_store\\ALERT-IN-691f15fe6cd2\\polygon.geojson",
+    "pdf_report": "C:\\Users\\jaish\\Downloads\\final-eco-sentinel\\eco-sentinel\\data\\evidence_store\\ALERT-IN-691f15fe6cd2\\report.pdf"
+  }
+}

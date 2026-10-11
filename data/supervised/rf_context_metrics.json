@@ -1,0 +1,62 @@
+{
+  "model": "Context-Aware Random Forest",
+  "random_state": 42,
+  "training_samples": 32000,
+  "validation_samples": 8000,
+  "development_samples": 40000,
+  "testing_samples": 10000,
+  "feature_count": 32,
+  "features": [
+    "delta_B1",
+    "delta_B4",
+    "delta_B5",
+    "delta_B9",
+    "delta_B11",
+    "delta_B12",
+    "delta_ndvi",
+    "delta_nbr",
+    "delta_ndwi",
+    "delta_ndmi",
+    "ndvi_2023",
+    "ndvi_2025",
+    "nbr_2023",
+    "nbr_2025",
+    "ndwi_2023",
+    "ndwi_2025",
+    "ndmi_2023",
+    "ndmi_2025",
+    "norm_B1",
+    "norm_B4",
+    "norm_B5",
+    "norm_B9",
+    "norm_B11",
+    "norm_B12",
+    "norm_ndvi",
+    "norm_nbr",
+    "norm_ndwi",
+    "norm_ndmi",
+    "B12_B8_2023",
+    "B12_B8_2025",
+    "B11_B8_2023",
+    "B11_B8_2025"
+  ],
+  "decision_threshold": 0.4350000000000002,
+  "validation_accuracy": 0.85775,
+  "accuracy": 0.8621,
+  "precision": 0.8933304366717358,
+  "recall": 0.8224,
+  "f1_score": 0.8563990419660523,
+  "roc_auc": 0.93135266,
+  "confusion_matrix": [
+    [
+      4509,
+      491
+    ],
+    [
+      888,
+      4112
+    ]
+  ],
+  "model_path": ".\\data\\supervised\\deforestation_rf_context.joblib",
+  "dataset": ".\\data\\supervised\\training_samples.csv"
+}

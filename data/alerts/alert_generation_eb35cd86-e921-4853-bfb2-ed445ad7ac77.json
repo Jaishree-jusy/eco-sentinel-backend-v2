@@ -1,0 +1,15 @@
+{
+  "run_id": "eb35cd86-e921-4853-bfb2-ed445ad7ac77",
+  "generated_at": "2026-09-03T14:05:00.561187+00:00",
+  "source_boundary_check_run_id": "e4f2d59d-8c9d-4e14-83b0-653ef2a43b2b",
+  "base_year": 2023,
+  "comparison_year": 2025,
+  "inside_forest_alerts": {
+    "path": "C:\\Users\\jaish\\Downloads\\final-eco-sentinel\\eco-sentinel\\data\\alerts\\alerts_inside_forest_2023_2025.json",
+    "count": 149
+  },
+  "outside_forest_alerts": {
+    "path": "C:\\Users\\jaish\\Downloads\\final-eco-sentinel\\eco-sentinel\\data\\alerts\\alerts_outside_forest_2023_2025.json",
+    "count": 8073
+  }
+}

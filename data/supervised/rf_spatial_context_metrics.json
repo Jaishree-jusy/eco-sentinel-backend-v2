@@ -1,0 +1,773 @@
+{
+  "model": "Random Forest - Corrected NDWI - Optimized",
+  "dataset": "data\\supervised\\training_samples.csv",
+  "ndwi_corrected": true,
+  "ndwi_formula": "(B3 - B8) / (B3 + B8)",
+  "features": [
+    "delta_B1",
+    "delta_B4",
+    "delta_B5",
+    "delta_B9",
+    "delta_B11",
+    "delta_B12",
+    "delta_ndvi",
+    "delta_nbr",
+    "delta_ndwi",
+    "delta_ndmi",
+    "nbr_local_median_2023",
+    "nbr_local_median_2025",
+    "snbr_2023",
+    "snbr_2025",
+    "delta_snbr",
+    "nbr_change_zscore"
+  ],
+  "random_seed": 42,
+  "development_samples": 40000,
+  "training_samples": 32000,
+  "validation_samples": 8000,
+  "final_test_samples": 10000,
+  "best_config": {
+    "n_estimators": 800,
+    "max_depth": null,
+    "min_samples_leaf": 1,
+    "max_features": 1.0
+  },
+  "validation_accuracy": 0.881875,
+  "selected_threshold": 0.42,
+  "test_accuracy": 0.8979,
+  "test_precision": 0.9034678564185763,
+  "test_recall": 0.891,
+  "test_f1": 0.8971906152451918,
+  "confusion_matrix": [
+    [
+      4524,
+      476
+    ],
+    [
+      545,
+      4455
+    ]
+  ],
+  "validation_results": [
+    {
+      "config": {
+        "n_estimators": 300,
+        "max_depth": null,
+        "min_samples_leaf": 1,
+        "max_features": "sqrt"
+      },
+      "validation_accuracy": 0.8755,
+      "threshold": 0.43
+    },
+    {
+      "config": {
+        "n_estimators": 300,
+        "max_depth": null,
+        "min_samples_leaf": 1,
+        "max_features": 0.7
+      },
+      "validation_accuracy": 0.881,
+      "threshold": 0.41
+    },
+    {
+      "config": {
+        "n_estimators": 300,
+        "max_depth": null,
+        "min_samples_leaf": 1,
+        "max_features": 1.0
+      },
+      "validation_accuracy": 0.881375,
+      "threshold": 0.46
+    },
+    {
+      "config": {
+        "n_estimators": 300,
+        "max_depth": null,
+        "min_samples_leaf": 2,
+        "max_features": "sqrt"
+      },
+      "validation_accuracy": 0.869125,
+      "threshold": 0.41
+    },
+    {
+      "config": {
+        "n_estimators": 300,
+        "max_depth": null,
+        "min_samples_leaf": 2,
+        "max_features": 0.7
+      },
+      "validation_accuracy": 0.87725,
+      "threshold": 0.42
+    },
+    {
+      "config": {
+        "n_estimators": 300,
+        "max_depth": null,
+        "min_samples_leaf": 2,
+        "max_features": 1.0
+      },
+      "validation_accuracy": 0.877625,
+      "threshold": 0.44
+    },
+    {
+      "config": {
+        "n_estimators": 300,
+        "max_depth": 20,
+        "min_samples_leaf": 1,
+        "max_features": "sqrt"
+      },
+      "validation_accuracy": 0.86175,
+      "threshold": 0.39
+    },
+    {
+      "config": {
+        "n_estimators": 300,
+        "max_depth": 20,
+        "min_samples_leaf": 1,
+        "max_features": 0.7
+      },
+      "validation_accuracy": 0.86875,
+      "threshold": 0.41
+    },
+    {
+      "config": {
+        "n_estimators": 300,
+        "max_depth": 20,
+        "min_samples_leaf": 1,
+        "max_features": 1.0
+      },
+      "validation_accuracy": 0.869375,
+      "threshold": 0.42
+    },
+    {
+      "config": {
+        "n_estimators": 300,
+        "max_depth": 20,
+        "min_samples_leaf": 2,
+        "max_features": "sqrt"
+      },
+      "validation_accuracy": 0.858125,
+      "threshold": 0.41
+    },
+    {
+      "config": {
+        "n_estimators": 300,
+        "max_depth": 20,
+        "min_samples_leaf": 2,
+        "max_features": 0.7
+      },
+      "validation_accuracy": 0.868875,
+      "threshold": 0.42
+    },
+    {
+      "config": {
+        "n_estimators": 300,
+        "max_depth": 20,
+        "min_samples_leaf": 2,
+        "max_features": 1.0
+      },
+      "validation_accuracy": 0.8685,
+      "threshold": 0.4
+    },
+    {
+      "config": {
+        "n_estimators": 300,
+        "max_depth": 30,
+        "min_samples_leaf": 1,
+        "max_features": "sqrt"
+      },
+      "validation_accuracy": 0.8745,
+      "threshold": 0.41
+    },
+    {
+      "config": {
+        "n_estimators": 300,
+        "max_depth": 30,
+        "min_samples_leaf": 1,
+        "max_features": 0.7
+      },
+      "validation_accuracy": 0.878625,
+      "threshold": 0.44
+    },
+    {
+      "config": {
+        "n_estimators": 300,
+        "max_depth": 30,
+        "min_samples_leaf": 1,
+        "max_features": 1.0
+      },
+      "validation_accuracy": 0.8805,
+      "threshold": 0.48
+    },
+    {
+      "config": {
+        "n_estimators": 300,
+        "max_depth": 30,
+        "min_samples_leaf": 2,
+        "max_features": "sqrt"
+      },
+      "validation_accuracy": 0.86975,
+      "threshold": 0.43
+    },
+    {
+      "config": {
+        "n_estimators": 300,
+        "max_depth": 30,
+        "min_samples_leaf": 2,
+        "max_features": 0.7
+      },
+      "validation_accuracy": 0.877875,
+      "threshold": 0.44
+    },
+    {
+      "config": {
+        "n_estimators": 300,
+        "max_depth": 30,
+        "min_samples_leaf": 2,
+        "max_features": 1.0
+      },
+      "validation_accuracy": 0.878875,
+      "threshold": 0.43
+    },
+    {
+      "config": {
+        "n_estimators": 300,
+        "max_depth": 40,
+        "min_samples_leaf": 1,
+        "max_features": "sqrt"
+      },
+      "validation_accuracy": 0.874875,
+      "threshold": 0.44
+    },
+    {
+      "config": {
+        "n_estimators": 300,
+        "max_depth": 40,
+        "min_samples_leaf": 1,
+        "max_features": 0.7
+      },
+      "validation_accuracy": 0.881,
+      "threshold": 0.41
+    },
+    {
+      "config": {
+        "n_estimators": 300,
+        "max_depth": 40,
+        "min_samples_leaf": 1,
+        "max_features": 1.0
+      },
+      "validation_accuracy": 0.881375,
+      "threshold": 0.47
+    },
+    {
+      "config": {
+        "n_estimators": 300,
+        "max_depth": 40,
+        "min_samples_leaf": 2,
+        "max_features": "sqrt"
+      },
+      "validation_accuracy": 0.86875,
+      "threshold": 0.41
+    },
+    {
+      "config": {
+        "n_estimators": 300,
+        "max_depth": 40,
+        "min_samples_leaf": 2,
+        "max_features": 0.7
+      },
+      "validation_accuracy": 0.8775,
+      "threshold": 0.44
+    },
+    {
+      "config": {
+        "n_estimators": 300,
+        "max_depth": 40,
+        "min_samples_leaf": 2,
+        "max_features": 1.0
+      },
+      "validation_accuracy": 0.877625,
+      "threshold": 0.44
+    },
+    {
+      "config": {
+        "n_estimators": 500,
+        "max_depth": null,
+        "min_samples_leaf": 1,
+        "max_features": "sqrt"
+      },
+      "validation_accuracy": 0.875125,
+      "threshold": 0.4
+    },
+    {
+      "config": {
+        "n_estimators": 500,
+        "max_depth": null,
+        "min_samples_leaf": 1,
+        "max_features": 0.7
+      },
+      "validation_accuracy": 0.881625,
+      "threshold": 0.42
+    },
+    {
+      "config": {
+        "n_estimators": 500,
+        "max_depth": null,
+        "min_samples_leaf": 1,
+        "max_features": 1.0
+      },
+      "validation_accuracy": 0.880625,
+      "threshold": 0.41
+    },
+    {
+      "config": {
+        "n_estimators": 500,
+        "max_depth": null,
+        "min_samples_leaf": 2,
+        "max_features": "sqrt"
+      },
+      "validation_accuracy": 0.8695,
+      "threshold": 0.44
+    },
+    {
+      "config": {
+        "n_estimators": 500,
+        "max_depth": null,
+        "min_samples_leaf": 2,
+        "max_features": 0.7
+      },
+      "validation_accuracy": 0.87725,
+      "threshold": 0.45
+    },
+    {
+      "config": {
+        "n_estimators": 500,
+        "max_depth": null,
+        "min_samples_leaf": 2,
+        "max_features": 1.0
+      },
+      "validation_accuracy": 0.877125,
+      "threshold": 0.43
+    },
+    {
+      "config": {
+        "n_estimators": 500,
+        "max_depth": 20,
+        "min_samples_leaf": 1,
+        "max_features": "sqrt"
+      },
+      "validation_accuracy": 0.862375,
+      "threshold": 0.38
+    },
+    {
+      "config": {
+        "n_estimators": 500,
+        "max_depth": 20,
+        "min_samples_leaf": 1,
+        "max_features": 0.7
+      },
+      "validation_accuracy": 0.868625,
+      "threshold": 0.4
+    },
+    {
+      "config": {
+        "n_estimators": 500,
+        "max_depth": 20,
+        "min_samples_leaf": 1,
+        "max_features": 1.0
+      },
+      "validation_accuracy": 0.87,
+      "threshold": 0.41
+    },
+    {
+      "config": {
+        "n_estimators": 500,
+        "max_depth": 20,
+        "min_samples_leaf": 2,
+        "max_features": "sqrt"
+      },
+      "validation_accuracy": 0.858625,
+      "threshold": 0.38
+    },
+    {
+      "config": {
+        "n_estimators": 500,
+        "max_depth": 20,
+        "min_samples_leaf": 2,
+        "max_features": 0.7
+      },
+      "validation_accuracy": 0.868125,
+      "threshold": 0.41
+    },
+    {
+      "config": {
+        "n_estimators": 500,
+        "max_depth": 20,
+        "min_samples_leaf": 2,
+        "max_features": 1.0
+      },
+      "validation_accuracy": 0.86775,
+      "threshold": 0.39
+    },
+    {
+      "config": {
+        "n_estimators": 500,
+        "max_depth": 30,
+        "min_samples_leaf": 1,
+        "max_features": "sqrt"
+      },
+      "validation_accuracy": 0.8745,
+      "threshold": 0.4
+    },
+    {
+      "config": {
+        "n_estimators": 500,
+        "max_depth": 30,
+        "min_samples_leaf": 1,
+        "max_features": 0.7
+      },
+      "validation_accuracy": 0.8795,
+      "threshold": 0.43
+    },
+    {
+      "config": {
+        "n_estimators": 500,
+        "max_depth": 30,
+        "min_samples_leaf": 1,
+        "max_features": 1.0
+      },
+      "validation_accuracy": 0.881125,
+      "threshold": 0.44
+    },
+    {
+      "config": {
+        "n_estimators": 500,
+        "max_depth": 30,
+        "min_samples_leaf": 2,
+        "max_features": "sqrt"
+      },
+      "validation_accuracy": 0.870125,
+      "threshold": 0.43
+    },
+    {
+      "config": {
+        "n_estimators": 500,
+        "max_depth": 30,
+        "min_samples_leaf": 2,
+        "max_features": 0.7
+      },
+      "validation_accuracy": 0.877,
+      "threshold": 0.42
+    },
+    {
+      "config": {
+        "n_estimators": 500,
+        "max_depth": 30,
+        "min_samples_leaf": 2,
+        "max_features": 1.0
+      },
+      "validation_accuracy": 0.878,
+      "threshold": 0.41
+    },
+    {
+      "config": {
+        "n_estimators": 500,
+        "max_depth": 40,
+        "min_samples_leaf": 1,
+        "max_features": "sqrt"
+      },
+      "validation_accuracy": 0.87575,
+      "threshold": 0.43
+    },
+    {
+      "config": {
+        "n_estimators": 500,
+        "max_depth": 40,
+        "min_samples_leaf": 1,
+        "max_features": 0.7
+      },
+      "validation_accuracy": 0.88175,
+      "threshold": 0.42
+    },
+    {
+      "config": {
+        "n_estimators": 500,
+        "max_depth": 40,
+        "min_samples_leaf": 1,
+        "max_features": 1.0
+      },
+      "validation_accuracy": 0.880375,
+      "threshold": 0.43
+    },
+    {
+      "config": {
+        "n_estimators": 500,
+        "max_depth": 40,
+        "min_samples_leaf": 2,
+        "max_features": "sqrt"
+      },
+      "validation_accuracy": 0.869875,
+      "threshold": 0.43
+    },
+    {
+      "config": {
+        "n_estimators": 500,
+        "max_depth": 40,
+        "min_samples_leaf": 2,
+        "max_features": 0.7
+      },
+      "validation_accuracy": 0.877125,
+      "threshold": 0.41
+    },
+    {
+      "config": {
+        "n_estimators": 500,
+        "max_depth": 40,
+        "min_samples_leaf": 2,
+        "max_features": 1.0
+      },
+      "validation_accuracy": 0.87725,
+      "threshold": 0.42
+    },
+    {
+      "config": {
+        "n_estimators": 800,
+        "max_depth": null,
+        "min_samples_leaf": 1,
+        "max_features": "sqrt"
+      },
+      "validation_accuracy": 0.8755,
+      "threshold": 0.41
+    },
+    {
+      "config": {
+        "n_estimators": 800,
+        "max_depth": null,
+        "min_samples_leaf": 1,
+        "max_features": 0.7
+      },
+      "validation_accuracy": 0.881625,
+      "threshold": 0.43
+    },
+    {
+      "config": {
+        "n_estimators": 800,
+        "max_depth": null,
+        "min_samples_leaf": 1,
+        "max_features": 1.0
+      },
+      "validation_accuracy": 0.881875,
+      "threshold": 0.42
+    },
+    {
+      "config": {
+        "n_estimators": 800,
+        "max_depth": null,
+        "min_samples_leaf": 2,
+        "max_features": "sqrt"
+      },
+      "validation_accuracy": 0.870125,
+      "threshold": 0.43
+    },
+    {
+      "config": {
+        "n_estimators": 800,
+        "max_depth": null,
+        "min_samples_leaf": 2,
+        "max_features": 0.7
+      },
+      "validation_accuracy": 0.878375,
+      "threshold": 0.41
+    },
+    {
+      "config": {
+        "n_estimators": 800,
+        "max_depth": null,
+        "min_samples_leaf": 2,
+        "max_features": 1.0
+      },
+      "validation_accuracy": 0.87775,
+      "threshold": 0.4
+    },
+    {
+      "config": {
+        "n_estimators": 800,
+        "max_depth": 20,
+        "min_samples_leaf": 1,
+        "max_features": "sqrt"
+      },
+      "validation_accuracy": 0.861875,
+      "threshold": 0.41
+    },
+    {
+      "config": {
+        "n_estimators": 800,
+        "max_depth": 20,
+        "min_samples_leaf": 1,
+        "max_features": 0.7
+      },
+      "validation_accuracy": 0.868875,
+      "threshold": 0.41
+    },
+    {
+      "config": {
+        "n_estimators": 800,
+        "max_depth": 20,
+        "min_samples_leaf": 1,
+        "max_features": 1.0
+      },
+      "validation_accuracy": 0.86975,
+      "threshold": 0.41
+    },
+    {
+      "config": {
+        "n_estimators": 800,
+        "max_depth": 20,
+        "min_samples_leaf": 2,
+        "max_features": "sqrt"
+      },
+      "validation_accuracy": 0.859,
+      "threshold": 0.4
+    },
+    {
+      "config": {
+        "n_estimators": 800,
+        "max_depth": 20,
+        "min_samples_leaf": 2,
+        "max_features": 0.7
+      },
+      "validation_accuracy": 0.8685,
+      "threshold": 0.41
+    },
+    {
+      "config": {
+        "n_estimators": 800,
+        "max_depth": 20,
+        "min_samples_leaf": 2,
+        "max_features": 1.0
+      },
+      "validation_accuracy": 0.869125,
+      "threshold": 0.39
+    },
+    {
+      "config": {
+        "n_estimators": 800,
+        "max_depth": 30,
+        "min_samples_leaf": 1,
+        "max_features": "sqrt"
+      },
+      "validation_accuracy": 0.874125,
+      "threshold": 0.41
+    },
+    {
+      "config": {
+        "n_estimators": 800,
+        "max_depth": 30,
+        "min_samples_leaf": 1,
+        "max_features": 0.7
+      },
+      "validation_accuracy": 0.8795,
+      "threshold": 0.43
+    },
+    {
+      "config": {
+        "n_estimators": 800,
+        "max_depth": 30,
+        "min_samples_leaf": 1,
+        "max_features": 1.0
+      },
+      "validation_accuracy": 0.880625,
+      "threshold": 0.41
+    },
+    {
+      "config": {
+        "n_estimators": 800,
+        "max_depth": 30,
+        "min_samples_leaf": 2,
+        "max_features": "sqrt"
+      },
+      "validation_accuracy": 0.870375,
+      "threshold": 0.44
+    },
+    {
+      "config": {
+        "n_estimators": 800,
+        "max_depth": 30,
+        "min_samples_leaf": 2,
+        "max_features": 0.7
+      },
+      "validation_accuracy": 0.87725,
+      "threshold": 0.43
+    },
+    {
+      "config": {
+        "n_estimators": 800,
+        "max_depth": 30,
+        "min_samples_leaf": 2,
+        "max_features": 1.0
+      },
+      "validation_accuracy": 0.877375,
+      "threshold": 0.4
+    },
+    {
+      "config": {
+        "n_estimators": 800,
+        "max_depth": 40,
+        "min_samples_leaf": 1,
+        "max_features": "sqrt"
+      },
+      "validation_accuracy": 0.875625,
+      "threshold": 0.41
+    },
+    {
+      "config": {
+        "n_estimators": 800,
+        "max_depth": 40,
+        "min_samples_leaf": 1,
+        "max_features": 0.7
+      },
+      "validation_accuracy": 0.881625,
+      "threshold": 0.43
+    },
+    {
+      "config": {
+        "n_estimators": 800,
+        "max_depth": 40,
+        "min_samples_leaf": 1,
+        "max_features": 1.0
+      },
+      "validation_accuracy": 0.88175,
+      "threshold": 0.42
+    },
+    {
+      "config": {
+        "n_estimators": 800,
+        "max_depth": 40,
+        "min_samples_leaf": 2,
+        "max_features": "sqrt"
+      },
+      "validation_accuracy": 0.869125,
+      "threshold": 0.42
+    },
+    {
+      "config": {
+        "n_estimators": 800,
+        "max_depth": 40,
+        "min_samples_leaf": 2,
+        "max_features": 0.7
+      },
+      "validation_accuracy": 0.878375,
+      "threshold": 0.41
+    },
+    {
+      "config": {
+        "n_estimators": 800,
+        "max_depth": 40,
+        "min_samples_leaf": 2,
+        "max_features": 1.0
+      },
+      "validation_accuracy": 0.87775,
+      "threshold": 0.4
+    }
+  ]
+}

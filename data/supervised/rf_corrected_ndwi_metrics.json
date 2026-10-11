@@ -1,0 +1,36 @@
+{
+  "model": "Random Forest",
+  "dataset": "data\\supervised\\training_samples.csv",
+  "ndwi_corrected": true,
+  "ndwi_formula": "(B3 - B8) / (B3 + B8)",
+  "features": [
+    "delta_B1",
+    "delta_B4",
+    "delta_B5",
+    "delta_B9",
+    "delta_B11",
+    "delta_B12",
+    "delta_ndvi",
+    "delta_nbr",
+    "delta_ndwi",
+    "delta_ndmi"
+  ],
+  "random_seed": 42,
+  "training_samples": 40000,
+  "final_test_samples": 10000,
+  "best_threshold": 0.4400000000000002,
+  "test_accuracy": 0.8876,
+  "test_precision": 0.9009102192800993,
+  "test_recall": 0.871,
+  "test_f1": 0.8857026642261542,
+  "confusion_matrix": [
+    [
+      4521,
+      479
+    ],
+    [
+      645,
+      4355
+    ]
+  ]
+}

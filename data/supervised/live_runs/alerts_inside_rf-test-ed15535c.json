@@ -1,0 +1,172 @@
+[
+  {
+    "alert_id": "RFTEST-ccb125e41cc7",
+    "date_time": "2026-10-09T06:24:10.131201+00:00",
+    "location": {
+      "latitude": 12.664493791339318,
+      "longitude": 74.92659138631207
+    },
+    "area_lost_ha": 0.0388,
+    "severity_level": "unknown",
+    "region_division": "Kasaragod",
+    "polygon_id": "SUP-RFTEST-ed15535c-001",
+    "ml_confidence": 0.5017,
+    "detection_class": "random_forest_deforestation",
+    "legality_status": "legal_status_unknown",
+    "matched_authorization_id": null,
+    "final_category": "legal_status_unknown"
+  },
+  {
+    "alert_id": "RFTEST-b7bd22ea87c5",
+    "date_time": "2026-10-09T06:24:10.131201+00:00",
+    "location": {
+      "latitude": 12.66449379129384,
+      "longitude": 74.98938362467257
+    },
+    "area_lost_ha": 0.0194,
+    "severity_level": "unknown",
+    "region_division": "Kasaragod",
+    "polygon_id": "SUP-RFTEST-ed15535c-002",
+    "ml_confidence": 0.515,
+    "detection_class": "random_forest_deforestation",
+    "legality_status": "legal_status_unknown",
+    "matched_authorization_id": null,
+    "final_category": "legal_status_unknown"
+  },
+  {
+    "alert_id": "RFTEST-8087f31b560a",
+    "date_time": "2026-10-09T06:24:10.131201+00:00",
+    "location": {
+      "latitude": 12.66449379131279,
+      "longitude": 75.04287829984209
+    },
+    "area_lost_ha": 0.0291,
+    "severity_level": "unknown",
+    "region_division": "Kasaragod",
+    "polygon_id": "SUP-RFTEST-ed15535c-003",
+    "ml_confidence": 0.5733,
+    "detection_class": "random_forest_deforestation",
+    "legality_status": "legal_status_unknown",
+    "matched_authorization_id": null,
+    "final_category": "legal_status_unknown"
+  },
+  {
+    "alert_id": "RFTEST-122c3844c20b",
+    "date_time": "2026-10-09T06:24:10.131201+00:00",
+    "location": {
+      "latitude": 12.664493791339316,
+      "longitude": 75.05316400984546
+    },
+    "area_lost_ha": 0.0388,
+    "severity_level": "unknown",
+    "region_division": "Dakshina Kannada",
+    "polygon_id": "SUP-RFTEST-ed15535c-004",
+    "ml_confidence": 0.5158,
+    "detection_class": "random_forest_deforestation",
+    "legality_status": "legal_status_unknown",
+    "matched_authorization_id": null,
+    "final_category": "legal_status_unknown"
+  },
+  {
+    "alert_id": "RFTEST-6c7555e0901e",
+    "date_time": "2026-10-09T06:24:10.131201+00:00",
+    "location": {
+      "latitude": 12.664448875521993,
+      "longitude": 74.9260523971421
+    },
+    "area_lost_ha": 0.0388,
+    "severity_level": "unknown",
+    "region_division": "Kasaragod",
+    "polygon_id": "SUP-RFTEST-ed15535c-005",
+    "ml_confidence": 0.5783,
+    "detection_class": "random_forest_deforestation",
+    "legality_status": "legal_status_unknown",
+    "matched_authorization_id": null,
+    "final_category": "legal_status_unknown"
+  },
+  {
+    "alert_id": "RFTEST-b1ca55e4ebf5",
+    "date_time": "2026-10-09T06:24:10.131201+00:00",
+    "location": {
+      "latitude": 12.664463847440501,
+      "longitude": 74.93558951108126
+    },
+    "area_lost_ha": 0.0291,
+    "severity_level": "unknown",
+    "region_division": "Kasaragod",
+    "polygon_id": "SUP-RFTEST-ed15535c-006",
+    "ml_confidence": 0.5133,
+    "detection_class": "random_forest_deforestation",
+    "legality_status": "legal_status_unknown",
+    "matched_authorization_id": null,
+    "final_category": "legal_status_unknown"
+  },
+  {
+    "alert_id": "RFTEST-aa0109e7a6ff",
+    "date_time": "2026-10-09T06:24:10.131201+00:00",
+    "location": {
+      "latitude": 12.664463847440414,
+      "longitude": 74.9400511436469
+    },
+    "area_lost_ha": 0.0291,
+    "severity_level": "unknown",
+    "region_division": "Kasaragod",
+    "polygon_id": "SUP-RFTEST-ed15535c-007",
+    "ml_confidence": 0.5256,
+    "detection_class": "random_forest_deforestation",
+    "legality_status": "legal_status_unknown",
+    "matched_authorization_id": null,
+    "final_category": "legal_status_unknown"
+  },
+  {
+    "alert_id": "RFTEST-fe88404d072b",
+    "date_time": "2026-10-09T06:24:10.131201+00:00",
+    "location": {
+      "latitude": 12.66444388494101,
+      "longitude": 75.02626944837283
+    },
+    "area_lost_ha": 0.0873,
+    "severity_level": "unknown",
+    "region_division": "Kasaragod",
+    "polygon_id": "SUP-RFTEST-ed15535c-008",
+    "ml_confidence": 0.5111,
+    "detection_class": "random_forest_deforestation",
+    "legality_status": "legal_status_unknown",
+    "matched_authorization_id": null,
+    "final_category": "legal_status_unknown"
+  },
+  {
+    "alert_id": "RFTEST-986a3a52b9c8",
+    "date_time": "2026-10-09T06:24:10.131201+00:00",
+    "location": {
+      "latitude": 12.664471333413584,
+      "longitude": 75.03578160909747
+    },
+    "area_lost_ha": 0.0388,
+    "severity_level": "unknown",
+    "region_division": "Kasaragod",
+    "polygon_id": "SUP-RFTEST-ed15535c-009",
+    "ml_confidence": 0.5283,
+    "detection_class": "random_forest_deforestation",
+    "legality_status": "legal_status_unknown",
+    "matched_authorization_id": null,
+    "final_category": "legal_status_unknown"
+  },
+  {
+    "alert_id": "RFTEST-3a4b39c93fab",
+    "date_time": "2026-10-09T06:24:10.131201+00:00",
+    "location": {
+      "latitude": 12.664448875521996,
+      "longitude": 75.04436052006074
+    },
+    "area_lost_ha": 0.0388,
+    "severity_level": "unknown",
+    "region_division": "Kasaragod",
+    "polygon_id": "SUP-RFTEST-ed15535c-010",
+    "ml_confidence": 0.5275,
+    "detection_class": "random_forest_deforestation",
+    "legality_status": "legal_status_unknown",
+    "matched_authorization_id": null,
+    "final_category": "legal_status_unknown"
+  }
+]

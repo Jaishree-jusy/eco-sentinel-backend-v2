@@ -1,0 +1,55 @@
+{
+  "model": "Random Forest - Hard Negative Weighted",
+  "dataset": "data\\supervised\\training_samples.csv",
+  "features": [
+    "delta_B12",
+    "delta_nbr",
+    "delta_B1",
+    "delta_B9",
+    "nbr_local_median_2023",
+    "delta_snbr",
+    "delta_B11",
+    "nbr_local_median_2025",
+    "delta_B5",
+    "snbr_2025",
+    "delta_ndmi",
+    "nbr_change_zscore"
+  ],
+  "random_seed": 42,
+  "development_samples": 40000,
+  "training_samples": 32000,
+  "validation_samples": 8000,
+  "final_test_samples": 10000,
+  "best_config": {
+    "n_estimators": 300,
+    "max_depth": 40,
+    "min_samples_leaf": 1,
+    "max_features": 1.0
+  },
+  "hard_negative_weight": 2.0,
+  "hard_negative_rules": [
+    "delta_nbr < -0.07",
+    "delta_ndmi < -0.05",
+    "nbr_change_zscore < -0.5",
+    "delta_B11 > 250",
+    "delta_B12 > 200"
+  ],
+  "training_hard_negatives": 1962,
+  "development_hard_negatives": 2462,
+  "validation_accuracy": 0.8915,
+  "selected_threshold": 0.42,
+  "test_accuracy": 0.9038,
+  "test_precision": 0.9007542675664947,
+  "test_recall": 0.9076,
+  "test_f1": 0.9041641761307033,
+  "confusion_matrix": [
+    [
+      4500,
+      500
+    ],
+    [
+      462,
+      4538
+    ]
+  ]
+}

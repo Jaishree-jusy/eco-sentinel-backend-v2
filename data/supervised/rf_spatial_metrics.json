@@ -1,0 +1,61 @@
+{
+  "model": "RandomForest Spatial Context",
+  "n_estimators": 500,
+  "max_depth": 40,
+  "min_samples_leaf": 1,
+  "max_features": 0.7,
+  "n_features": 34,
+  "features": [
+    "delta_B1",
+    "delta_B4",
+    "delta_B5",
+    "delta_B9",
+    "delta_B11",
+    "delta_B12",
+    "delta_ndvi",
+    "delta_nbr",
+    "delta_ndwi",
+    "delta_ndmi",
+    "delta_B11_mean3",
+    "delta_B11_std3",
+    "delta_B11_mean5",
+    "delta_B11_std5",
+    "delta_B12_mean3",
+    "delta_B12_std3",
+    "delta_B12_mean5",
+    "delta_B12_std5",
+    "delta_ndvi_mean3",
+    "delta_ndvi_std3",
+    "delta_ndvi_mean5",
+    "delta_ndvi_std5",
+    "delta_nbr_mean3",
+    "delta_nbr_std3",
+    "delta_nbr_mean5",
+    "delta_nbr_std5",
+    "delta_ndwi_mean3",
+    "delta_ndwi_std3",
+    "delta_ndwi_mean5",
+    "delta_ndwi_std5",
+    "delta_ndmi_mean3",
+    "delta_ndmi_std3",
+    "delta_ndmi_mean5",
+    "delta_ndmi_std5"
+  ],
+  "threshold": 0.4200000000000001,
+  "validation_accuracy": 0.877375,
+  "test_accuracy": 0.8849,
+  "test_precision": 0.9025308512863418,
+  "test_recall": 0.863,
+  "test_f1": 0.8823228708720989,
+  "test_roc_auc": 0.94832732,
+  "confusion_matrix": [
+    [
+      4534,
+      466
+    ],
+    [
+      685,
+      4315
+    ]
+  ]
+}

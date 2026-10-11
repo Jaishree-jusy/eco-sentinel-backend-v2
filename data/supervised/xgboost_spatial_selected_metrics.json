@@ -1,0 +1,121 @@
+{
+  "model": "XGBoost - Spatial Selected",
+  "dataset": "data\\supervised\\training_samples.csv",
+  "features": [
+    "delta_B12",
+    "delta_nbr",
+    "delta_B1",
+    "delta_B9",
+    "nbr_local_median_2023",
+    "delta_snbr",
+    "delta_B11",
+    "nbr_local_median_2025",
+    "delta_B5",
+    "snbr_2025",
+    "delta_ndmi",
+    "nbr_change_zscore"
+  ],
+  "random_seed": 42,
+  "development_samples": 40000,
+  "training_samples": 32000,
+  "validation_samples": 8000,
+  "final_test_samples": 10000,
+  "best_config": {
+    "n_estimators": 500,
+    "max_depth": 8,
+    "learning_rate": 0.03,
+    "subsample": 0.9,
+    "colsample_bytree": 0.9,
+    "min_child_weight": 1
+  },
+  "validation_accuracy": 0.876375,
+  "selected_threshold": 0.4,
+  "test_accuracy": 0.8892,
+  "test_precision": 0.9000822368421053,
+  "test_recall": 0.8756,
+  "test_f1": 0.8876723438767234,
+  "confusion_matrix": [
+    [
+      4514,
+      486
+    ],
+    [
+      622,
+      4378
+    ]
+  ],
+  "validation_results": [
+    {
+      "config": {
+        "n_estimators": 300,
+        "max_depth": 4,
+        "learning_rate": 0.05,
+        "subsample": 0.9,
+        "colsample_bytree": 0.9,
+        "min_child_weight": 1
+      },
+      "validation_accuracy": 0.836125,
+      "threshold": 0.44
+    },
+    {
+      "config": {
+        "n_estimators": 500,
+        "max_depth": 4,
+        "learning_rate": 0.05,
+        "subsample": 0.9,
+        "colsample_bytree": 0.9,
+        "min_child_weight": 1
+      },
+      "validation_accuracy": 0.846,
+      "threshold": 0.38
+    },
+    {
+      "config": {
+        "n_estimators": 500,
+        "max_depth": 6,
+        "learning_rate": 0.05,
+        "subsample": 0.9,
+        "colsample_bytree": 0.9,
+        "min_child_weight": 1
+      },
+      "validation_accuracy": 0.866125,
+      "threshold": 0.44
+    },
+    {
+      "config": {
+        "n_estimators": 500,
+        "max_depth": 6,
+        "learning_rate": 0.03,
+        "subsample": 0.9,
+        "colsample_bytree": 0.9,
+        "min_child_weight": 1
+      },
+      "validation_accuracy": 0.856,
+      "threshold": 0.43
+    },
+    {
+      "config": {
+        "n_estimators": 800,
+        "max_depth": 6,
+        "learning_rate": 0.03,
+        "subsample": 0.9,
+        "colsample_bytree": 0.9,
+        "min_child_weight": 1
+      },
+      "validation_accuracy": 0.866625,
+      "threshold": 0.44
+    },
+    {
+      "config": {
+        "n_estimators": 500,
+        "max_depth": 8,
+        "learning_rate": 0.03,
+        "subsample": 0.9,
+        "colsample_bytree": 0.9,
+        "min_child_weight": 1
+      },
+      "validation_accuracy": 0.876375,
+      "threshold": 0.4
+    }
+  ]
+}

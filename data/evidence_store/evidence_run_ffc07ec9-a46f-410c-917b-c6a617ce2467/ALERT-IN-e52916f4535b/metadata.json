@@ -1,0 +1,35 @@
+{
+  "alert_id": "ALERT-IN-e52916f4535b",
+  "date_time": "2026-10-09T17:44:26.764137+00:00",
+  "location": {
+    "latitude": 12.649958,
+    "longitude": 74.966688
+  },
+  "area_lost_ha": 0.2035,
+  "severity_level": "mild",
+  "region_division": "Kasaragod",
+  "polygon_id": "LOSS-86f5332c1ea1",
+  "ml_confidence": null,
+  "detection_class": "vegetation_loss",
+  "legality_status": "legal_status_unknown",
+  "matched_authorization_id": null,
+  "final_category": "legal_status_unknown",
+  "evidence_generated_at": "2026-10-09T18:25:21.607316+00:00",
+  "evidence_files": {
+    "map_snapshot": "C:\\Users\\jaish\\Downloads\\final-eco-sentinel\\eco-sentinel(backend)\\data\\evidence_store\\evidence_run_ffc07ec9-a46f-410c-917b-c6a617ce2467\\ALERT-IN-e52916f4535b\\map_snapshot.png",
+    "geojson": "C:\\Users\\jaish\\Downloads\\final-eco-sentinel\\eco-sentinel(backend)\\data\\evidence_store\\evidence_run_ffc07ec9-a46f-410c-917b-c6a617ce2467\\ALERT-IN-e52916f4535b\\polygon.geojson",
+    "pdf_report": "C:\\Users\\jaish\\Downloads\\final-eco-sentinel\\eco-sentinel(backend)\\data\\evidence_store\\evidence_run_ffc07ec9-a46f-410c-917b-c6a617ce2467\\ALERT-IN-e52916f4535b\\report.pdf"
+  },
+  "source_imagery": {
+    "acquisition_date": "2026-09-27T05:35:40.240000+00:00",
+    "image_id": "COPERNICUS/S2_SR_HARMONIZED/20260927T051651_20260927T053403_T43PDP",
+    "cloud_cover_pct": 1.987582,
+    "cloud_masking": "Sentinel-2 SCL classes excluded: 0, 1, 3, 8, 9, 10",
+    "comparison_method": "NDVI difference: 2026-09-27 minus 2025 baseline",
+    "base_year": 2025,
+    "comparison_year": "2026-09-27",
+    "comparison_period": "2025 vs 2026-09-27",
+    "source_acquisition_run_id": "aebf2f55-7cc2-4e80-8f02-dd72e4c7aa40",
+    "source_raster_path": "C:\\Users\\jaish\\Downloads\\final-eco-sentinel\\eco-sentinel(backend)\\data\\raw_images\\forest_samples\\Forest_Sample_2025_gee_4af06426_aligned_4af06426.tif"
+  }
+}

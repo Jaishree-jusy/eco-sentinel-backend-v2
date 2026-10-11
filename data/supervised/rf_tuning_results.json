@@ -1,0 +1,344 @@
+{
+  "dataset": ".\\data\\supervised\\training_samples.csv",
+  "features": [
+    "delta_B1",
+    "delta_B2",
+    "delta_B3",
+    "delta_B4",
+    "delta_B5",
+    "delta_B6",
+    "delta_B7",
+    "delta_B8",
+    "delta_B8A",
+    "delta_B9",
+    "delta_B11",
+    "delta_B12",
+    "delta_ndvi",
+    "delta_nbr",
+    "delta_ndwi",
+    "delta_ndmi"
+  ],
+  "development_samples": 39997,
+  "training_samples": 31997,
+  "validation_samples": 8000,
+  "final_test_samples": 10000,
+  "best_parameters": {
+    "max_depth": null,
+    "max_features": 0.7,
+    "min_samples_leaf": 1,
+    "n_estimators": 300
+  },
+  "best_validation_metrics": {
+    "accuracy": 0.86725,
+    "precision": 0.926786751888437,
+    "recall": 0.7975,
+    "f1_score": 0.8572964256920182
+  },
+  "final_test_metrics": {
+    "accuracy": 0.8738,
+    "precision": 0.9241942805265547,
+    "recall": 0.8144,
+    "f1_score": 0.8658303210716564,
+    "confusion_matrix": [
+      [
+        4666,
+        334
+      ],
+      [
+        928,
+        4072
+      ]
+    ]
+  },
+  "all_validation_results": [
+    {
+      "params": {
+        "max_depth": null,
+        "max_features": 0.7,
+        "min_samples_leaf": 1,
+        "n_estimators": 300
+      },
+      "accuracy": 0.86725,
+      "precision": 0.926786751888437,
+      "recall": 0.7975,
+      "f1_score": 0.8572964256920182
+    },
+    {
+      "params": {
+        "max_depth": 30,
+        "max_features": 0.7,
+        "min_samples_leaf": 1,
+        "n_estimators": 300
+      },
+      "accuracy": 0.866625,
+      "precision": 0.9249492900608519,
+      "recall": 0.798,
+      "f1_score": 0.8567977452690914
+    },
+    {
+      "params": {
+        "max_depth": null,
+        "max_features": 0.7,
+        "min_samples_leaf": 1,
+        "n_estimators": 500
+      },
+      "accuracy": 0.8655,
+      "precision": 0.924506387921022,
+      "recall": 0.796,
+      "f1_score": 0.8554540569586244
+    },
+    {
+      "params": {
+        "max_depth": 30,
+        "max_features": 0.7,
+        "min_samples_leaf": 1,
+        "n_estimators": 500
+      },
+      "accuracy": 0.865,
+      "precision": 0.9236796285548462,
+      "recall": 0.79575,
+      "f1_score": 0.854955680902498
+    },
+    {
+      "params": {
+        "max_depth": null,
+        "max_features": 0.7,
+        "min_samples_leaf": 2,
+        "n_estimators": 500
+      },
+      "accuracy": 0.86175,
+      "precision": 0.9250881316098707,
+      "recall": 0.78725,
+      "f1_score": 0.8506212857914641
+    },
+    {
+      "params": {
+        "max_depth": null,
+        "max_features": 0.7,
+        "min_samples_leaf": 2,
+        "n_estimators": 300
+      },
+      "accuracy": 0.861625,
+      "precision": 0.9248164464023495,
+      "recall": 0.78725,
+      "f1_score": 0.8505064145847401
+    },
+    {
+      "params": {
+        "max_depth": 30,
+        "max_features": 0.7,
+        "min_samples_leaf": 2,
+        "n_estimators": 500
+      },
+      "accuracy": 0.860625,
+      "precision": 0.9243895263312739,
+      "recall": 0.7855,
+      "f1_score": 0.8493039599945938
+    },
+    {
+      "params": {
+        "max_depth": 30,
+        "max_features": 0.7,
+        "min_samples_leaf": 2,
+        "n_estimators": 300
+      },
+      "accuracy": 0.860375,
+      "precision": 0.9240953221535746,
+      "recall": 0.78525,
+      "f1_score": 0.8490336531963779
+    },
+    {
+      "params": {
+        "max_depth": 20,
+        "max_features": 0.7,
+        "min_samples_leaf": 1,
+        "n_estimators": 300
+      },
+      "accuracy": 0.8575,
+      "precision": 0.9243323442136498,
+      "recall": 0.77875,
+      "f1_score": 0.8453188602442334
+    },
+    {
+      "params": {
+        "max_depth": 20,
+        "max_features": 0.7,
+        "min_samples_leaf": 1,
+        "n_estimators": 500
+      },
+      "accuracy": 0.85675,
+      "precision": 0.9249553305539011,
+      "recall": 0.7765,
+      "f1_score": 0.8442511552052188
+    },
+    {
+      "params": {
+        "max_depth": 30,
+        "max_features": "sqrt",
+        "min_samples_leaf": 1,
+        "n_estimators": 500
+      },
+      "accuracy": 0.854875,
+      "precision": 0.9243647234678625,
+      "recall": 0.773,
+      "f1_score": 0.8419332879509871
+    },
+    {
+      "params": {
+        "max_depth": null,
+        "max_features": "sqrt",
+        "min_samples_leaf": 1,
+        "n_estimators": 500
+      },
+      "accuracy": 0.8545,
+      "precision": 0.9242968282465589,
+      "recall": 0.77225,
+      "f1_score": 0.8414600926178153
+    },
+    {
+      "params": {
+        "max_depth": 20,
+        "max_features": 0.7,
+        "min_samples_leaf": 2,
+        "n_estimators": 300
+      },
+      "accuracy": 0.853875,
+      "precision": 0.9252027635926705,
+      "recall": 0.77,
+      "f1_score": 0.8404966571155683
+    },
+    {
+      "params": {
+        "max_depth": 30,
+        "max_features": "sqrt",
+        "min_samples_leaf": 1,
+        "n_estimators": 300
+      },
+      "accuracy": 0.853625,
+      "precision": 0.9221128021486124,
+      "recall": 0.7725,
+      "f1_score": 0.8407019453135628
+    },
+    {
+      "params": {
+        "max_depth": null,
+        "max_features": "sqrt",
+        "min_samples_leaf": 1,
+        "n_estimators": 300
+      },
+      "accuracy": 0.8525,
+      "precision": 0.9231692677070829,
+      "recall": 0.769,
+      "f1_score": 0.8390616475722859
+    },
+    {
+      "params": {
+        "max_depth": 20,
+        "max_features": 0.7,
+        "min_samples_leaf": 2,
+        "n_estimators": 500
+      },
+      "accuracy": 0.852375,
+      "precision": 0.9231462023416391,
+      "recall": 0.76875,
+      "f1_score": 0.8389032874096304
+    },
+    {
+      "params": {
+        "max_depth": null,
+        "max_features": "sqrt",
+        "min_samples_leaf": 2,
+        "n_estimators": 300
+      },
+      "accuracy": 0.85175,
+      "precision": 0.9232851985559567,
+      "recall": 0.76725,
+      "f1_score": 0.8380666302566904
+    },
+    {
+      "params": {
+        "max_depth": null,
+        "max_features": "sqrt",
+        "min_samples_leaf": 2,
+        "n_estimators": 500
+      },
+      "accuracy": 0.851125,
+      "precision": 0.9234247814290021,
+      "recall": 0.76575,
+      "f1_score": 0.8372283722837228
+    },
+    {
+      "params": {
+        "max_depth": 30,
+        "max_features": "sqrt",
+        "min_samples_leaf": 2,
+        "n_estimators": 300
+      },
+      "accuracy": 0.849,
+      "precision": 0.9232868405093997,
+      "recall": 0.76125,
+      "f1_score": 0.8344751986845711
+    },
+    {
+      "params": {
+        "max_depth": 30,
+        "max_features": "sqrt",
+        "min_samples_leaf": 2,
+        "n_estimators": 500
+      },
+      "accuracy": 0.84875,
+      "precision": 0.9237545565006076,
+      "recall": 0.76025,
+      "f1_score": 0.8340647284695557
+    },
+    {
+      "params": {
+        "max_depth": 20,
+        "max_features": "sqrt",
+        "min_samples_leaf": 1,
+        "n_estimators": 500
+      },
+      "accuracy": 0.845,
+      "precision": 0.9243542435424354,
+      "recall": 0.7515,
+      "f1_score": 0.8290126861555432
+    },
+    {
+      "params": {
+        "max_depth": 20,
+        "max_features": "sqrt",
+        "min_samples_leaf": 1,
+        "n_estimators": 300
+      },
+      "accuracy": 0.84475,
+      "precision": 0.9240467404674046,
+      "recall": 0.75125,
+      "f1_score": 0.8287369001654716
+    },
+    {
+      "params": {
+        "max_depth": 20,
+        "max_features": "sqrt",
+        "min_samples_leaf": 2,
+        "n_estimators": 300
+      },
+      "accuracy": 0.842625,
+      "precision": 0.9220819217739452,
+      "recall": 0.7485,
+      "f1_score": 0.8262729405271146
+    },
+    {
+      "params": {
+        "max_depth": 20,
+        "max_features": "sqrt",
+        "min_samples_leaf": 2,
+        "n_estimators": 500
+      },
+      "accuracy": 0.8425,
+      "precision": 0.9207616707616708,
+      "recall": 0.7495,
+      "f1_score": 0.8263506063947078
+    }
+  ],
+  "model_path": ".\\data\\supervised\\deforestation_random_forest_tuned.joblib"
+}

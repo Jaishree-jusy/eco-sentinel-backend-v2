@@ -1,0 +1,41 @@
+{
+  "model": "Hard-Example Weighted Random Forest",
+  "random_state": 42,
+  "features": [
+    "delta_B1",
+    "delta_B4",
+    "delta_B5",
+    "delta_B9",
+    "delta_B11",
+    "delta_B12",
+    "delta_ndvi",
+    "delta_nbr",
+    "delta_ndwi",
+    "delta_ndmi"
+  ],
+  "feature_count": 10,
+  "development_samples": 40000,
+  "training_samples": 32000,
+  "validation_samples": 8000,
+  "testing_samples": 10000,
+  "hard_example_strength": 1.5,
+  "decision_threshold": 0.44500000000000023,
+  "validation_accuracy": 0.874875,
+  "accuracy": 0.8869,
+  "precision": 0.904622463919682,
+  "recall": 0.865,
+  "f1_score": 0.8843676515693691,
+  "roc_auc": 0.94657458,
+  "confusion_matrix": [
+    [
+      4544,
+      456
+    ],
+    [
+      675,
+      4325
+    ]
+  ],
+  "model_path": ".\\data\\supervised\\deforestation_rf_hard_example.joblib",
+  "dataset": ".\\data\\supervised\\training_samples.csv"
+}

@@ -1,0 +1,7 @@
+{
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "alert_id": "ALERT-IN-fe14690c0d48", "date_time": "2026-09-15T06:52:37.819798+00:00", "area_lost_ha": 0.271, "severity_level": "unknown", "region_division": "Udupi", "polygon_id": "LOSS-019726b9b819", "ml_confidence": 0.57238090038299561, "detection_class": "random_forest_deforestation", "legality_status": "legal_status_unknown", "matched_authorization_id": null, "final_category": "legal_status_unknown", "latitude": 12.986052, "longitude": 75.00281 }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 75.002588859349146, 12.98631524181704 ], [ 75.002588859349146, 12.985776252646566 ], [ 75.002678690877559, 12.985776252646565 ], [ 75.002678690877559, 12.985866084174976 ], [ 75.002768522405972, 12.98586608417498 ], [ 75.002768522405972, 12.985776252646566 ], [ 75.003038016991198, 12.985776252646563 ], [ 75.003038016991198, 12.986045747231799 ], [ 75.002948185462785, 12.986045747231802 ], [ 75.002948185462785, 12.986135578760218 ], [ 75.003038016991198, 12.986135578760214 ], [ 75.003038016991198, 12.986315241817039 ], [ 75.002588859349146, 12.98631524181704 ] ] ] } }
+]
+}

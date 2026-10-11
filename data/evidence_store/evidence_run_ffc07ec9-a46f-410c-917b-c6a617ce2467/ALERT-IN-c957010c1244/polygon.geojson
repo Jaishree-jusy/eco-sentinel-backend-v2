@@ -1,0 +1,7 @@
+{
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "alert_id": "ALERT-IN-c957010c1244", "date_time": "2026-10-09T17:44:26.764137+00:00", "area_lost_ha": 0.1357, "severity_level": "mild", "region_division": "Kasaragod", "polygon_id": "LOSS-5fff2ee4bd70", "ml_confidence": null, "detection_class": "vegetation_loss", "legality_status": "legal_status_unknown", "matched_authorization_id": null, "final_category": "legal_status_unknown", "latitude": 12.660047, "longitude": 75.037289 }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 75.037084166259334, 12.660226793681652 ], [ 75.037084166259334, 12.660047130624829 ], [ 75.037173997787747, 12.660047130624829 ], [ 75.037173997787747, 12.659867467568004 ], [ 75.037443492372972, 12.659867467568004 ], [ 75.037443492372972, 12.659957299096417 ], [ 75.037533323901386, 12.659957299096417 ], [ 75.037533323901386, 12.660047130624829 ], [ 75.037443492372972, 12.660047130624829 ], [ 75.037443492372972, 12.66013696215324 ], [ 75.037353660844573, 12.66013696215324 ], [ 75.037353660844573, 12.660226793681652 ], [ 75.037084166259334, 12.660226793681652 ] ] ] } }
+]
+}

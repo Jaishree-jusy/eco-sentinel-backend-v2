@@ -1,0 +1,63 @@
+{
+  "model": "LGBMClassifier",
+  "random_state": 42,
+  "best_iteration": 1000,
+  "decision_threshold": 0.4299999999999998,
+  "training_samples": 34997,
+  "validation_samples": 5000,
+  "testing_samples": 10000,
+  "validation_accuracy": 0.8706,
+  "accuracy_default_threshold": 0.865,
+  "accuracy": 0.8711,
+  "precision": 0.8977491961414791,
+  "recall": 0.8376,
+  "f1_score": 0.8666321779617175,
+  "confusion_matrix": [
+    [
+      4523,
+      477
+    ],
+    [
+      812,
+      4188
+    ]
+  ],
+  "feature_importance": {
+    "delta_B9": 7831.0,
+    "delta_B1": 7721.0,
+    "delta_B5": 4517.0,
+    "delta_B11": 4130.0,
+    "delta_B6": 3951.0,
+    "delta_B8A": 3734.0,
+    "delta_B7": 3727.0,
+    "delta_B2": 3700.0,
+    "delta_B12": 3657.0,
+    "delta_B3": 2869.0,
+    "delta_B4": 2786.0,
+    "delta_ndvi": 2771.0,
+    "delta_ndwi": 2732.0,
+    "delta_nbr": 2693.0,
+    "delta_B8": 2670.0,
+    "delta_ndmi": 2511.0
+  },
+  "features": [
+    "delta_B1",
+    "delta_B2",
+    "delta_B3",
+    "delta_B4",
+    "delta_B5",
+    "delta_B6",
+    "delta_B7",
+    "delta_B8",
+    "delta_B8A",
+    "delta_B9",
+    "delta_B11",
+    "delta_B12",
+    "delta_ndvi",
+    "delta_nbr",
+    "delta_ndwi",
+    "delta_ndmi"
+  ],
+  "dataset": ".\\data\\supervised\\training_samples.csv",
+  "model_path": ".\\data\\supervised\\deforestation_lightgbm.joblib"
+}

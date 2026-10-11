@@ -1,0 +1,53 @@
+{
+  "run_id": "30d77d2b-20f5-4b70-aec9-1ce75e108c9e",
+  "generated_at": "2026-09-15T07:30:49.029866+00:00",
+  "source_alert_generation_run_id": "21e4fc94-7c04-40de-9bc3-a4924e2f67a8",
+  "requested_limit": 5,
+  "total_alerts_processed": 5,
+  "successful": 5,
+  "skipped_already_done": 0,
+  "failed": 0,
+  "failures": [],
+  "evidence_records": [
+    {
+      "alert_id": "ALERT-IN-2500fa75c356",
+      "evidence_dir": "C:\\Users\\jaish\\Downloads\\final-eco-sentinel\\eco-sentinel\\data\\evidence_store\\ALERT-IN-2500fa75c356",
+      "map_snapshot": "C:\\Users\\jaish\\Downloads\\final-eco-sentinel\\eco-sentinel\\data\\evidence_store\\ALERT-IN-2500fa75c356\\map_snapshot.png",
+      "geojson": "C:\\Users\\jaish\\Downloads\\final-eco-sentinel\\eco-sentinel\\data\\evidence_store\\ALERT-IN-2500fa75c356\\polygon.geojson",
+      "pdf_report": "C:\\Users\\jaish\\Downloads\\final-eco-sentinel\\eco-sentinel\\data\\evidence_store\\ALERT-IN-2500fa75c356\\report.pdf",
+      "metadata": "C:\\Users\\jaish\\Downloads\\final-eco-sentinel\\eco-sentinel\\data\\evidence_store\\ALERT-IN-2500fa75c356\\metadata.json"
+    },
+    {
+      "alert_id": "ALERT-IN-5028ed630a97",
+      "evidence_dir": "C:\\Users\\jaish\\Downloads\\final-eco-sentinel\\eco-sentinel\\data\\evidence_store\\ALERT-IN-5028ed630a97",
+      "map_snapshot": "C:\\Users\\jaish\\Downloads\\final-eco-sentinel\\eco-sentinel\\data\\evidence_store\\ALERT-IN-5028ed630a97\\map_snapshot.png",
+      "geojson": "C:\\Users\\jaish\\Downloads\\final-eco-sentinel\\eco-sentinel\\data\\evidence_store\\ALERT-IN-5028ed630a97\\polygon.geojson",
+      "pdf_report": "C:\\Users\\jaish\\Downloads\\final-eco-sentinel\\eco-sentinel\\data\\evidence_store\\ALERT-IN-5028ed630a97\\report.pdf",
+      "metadata": "C:\\Users\\jaish\\Downloads\\final-eco-sentinel\\eco-sentinel\\data\\evidence_store\\ALERT-IN-5028ed630a97\\metadata.json"
+    },
+    {
+      "alert_id": "ALERT-IN-9379e802dcf3",
+      "evidence_dir": "C:\\Users\\jaish\\Downloads\\final-eco-sentinel\\eco-sentinel\\data\\evidence_store\\ALERT-IN-9379e802dcf3",
+      "map_snapshot": "C:\\Users\\jaish\\Downloads\\final-eco-sentinel\\eco-sentinel\\data\\evidence_store\\ALERT-IN-9379e802dcf3\\map_snapshot.png",
+      "geojson": "C:\\Users\\jaish\\Downloads\\final-eco-sentinel\\eco-sentinel\\data\\evidence_store\\ALERT-IN-9379e802dcf3\\polygon.geojson",
+      "pdf_report": "C:\\Users\\jaish\\Downloads\\final-eco-sentinel\\eco-sentinel\\data\\evidence_store\\ALERT-IN-9379e802dcf3\\report.pdf",
+      "metadata": "C:\\Users\\jaish\\Downloads\\final-eco-sentinel\\eco-sentinel\\data\\evidence_store\\ALERT-IN-9379e802dcf3\\metadata.json"
+    },
+    {
+      "alert_id": "ALERT-IN-77703c412bdf",
+      "evidence_dir": "C:\\Users\\jaish\\Downloads\\final-eco-sentinel\\eco-sentinel\\data\\evidence_store\\ALERT-IN-77703c412bdf",
+      "map_snapshot": "C:\\Users\\jaish\\Downloads\\final-eco-sentinel\\eco-sentinel\\data\\evidence_store\\ALERT-IN-77703c412bdf\\map_snapshot.png",
+      "geojson": "C:\\Users\\jaish\\Downloads\\final-eco-sentinel\\eco-sentinel\\data\\evidence_store\\ALERT-IN-77703c412bdf\\polygon.geojson",
+      "pdf_report": "C:\\Users\\jaish\\Downloads\\final-eco-sentinel\\eco-sentinel\\data\\evidence_store\\ALERT-IN-77703c412bdf\\report.pdf",
+      "metadata": "C:\\Users\\jaish\\Downloads\\final-eco-sentinel\\eco-sentinel\\data\\evidence_store\\ALERT-IN-77703c412bdf\\metadata.json"
+    },
+    {
+      "alert_id": "ALERT-IN-2e520205e826",
+      "evidence_dir": "C:\\Users\\jaish\\Downloads\\final-eco-sentinel\\eco-sentinel\\data\\evidence_store\\ALERT-IN-2e520205e826",
+      "map_snapshot": "C:\\Users\\jaish\\Downloads\\final-eco-sentinel\\eco-sentinel\\data\\evidence_store\\ALERT-IN-2e520205e826\\map_snapshot.png",
+      "geojson": "C:\\Users\\jaish\\Downloads\\final-eco-sentinel\\eco-sentinel\\data\\evidence_store\\ALERT-IN-2e520205e826\\polygon.geojson",
+      "pdf_report": "C:\\Users\\jaish\\Downloads\\final-eco-sentinel\\eco-sentinel\\data\\evidence_store\\ALERT-IN-2e520205e826\\report.pdf",
+      "metadata": "C:\\Users\\jaish\\Downloads\\final-eco-sentinel\\eco-sentinel\\data\\evidence_store\\ALERT-IN-2e520205e826\\metadata.json"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "run_id": "4fe33374-32e3-44d4-b75d-37f3d86a456a",
+  "analyzed_at": "2026-09-03T14:02:31.905754+00:00",
+  "source_loss_detection_run_id": null,
+  "base_year": 2023,
+  "comparison_year": 2025,
+  "region": null,
+  "geojson_path": "C:\\Users\\jaish\\Downloads\\final-eco-sentinel\\eco-sentinel\\data\\supervised\\deforestation_boundary_input_2023_2025.geojson",
+  "stats": {
+    "raw_polygon_count": 28600,
+    "filtered_polygon_count": 28600,
+    "min_area_ha_filter": null,
+    "total_loss_area_ha": 12027.8989,
+    "severity_counts": {},
+    "ai_scoring_applied": true,
+    "detection_class_counts": {
+      "deforestation": 28600
+    }
+  },
+  "source": "supervised_random_forest",
+  "source_geojson": "C:\\Users\\jaish\\Downloads\\final-eco-sentinel\\eco-sentinel\\data\\supervised\\deforestation_boundary_input_2023_2025.geojson"
+}

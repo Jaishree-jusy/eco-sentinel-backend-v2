@@ -1,0 +1,43 @@
+{
+  "model": "RandomForest Threshold Optimized",
+  "features": [
+    "delta_B1",
+    "delta_B4",
+    "delta_B5",
+    "delta_B9",
+    "delta_B11",
+    "delta_B12",
+    "delta_ndvi",
+    "delta_nbr",
+    "delta_ndwi",
+    "delta_ndmi"
+  ],
+  "n_features": 10,
+  "n_estimators": 300,
+  "max_depth": 40,
+  "min_samples_leaf": 1,
+  "max_features": 1.0,
+  "threshold": 0.44500000000000023,
+  "validation_accuracy": 0.874,
+  "validation_precision": 0.8974495217853348,
+  "validation_recall": 0.8445,
+  "validation_f1": 0.8701700154559505,
+  "validation_roc_auc": 0.931270375,
+  "test_accuracy": 0.8871,
+  "test_precision": 0.9024745269286754,
+  "test_recall": 0.868,
+  "test_f1": 0.8849016209603425,
+  "test_roc_auc": 0.94406722,
+  "confusion_matrix": [
+    [
+      4531,
+      469
+    ],
+    [
+      660,
+      4340
+    ]
+  ],
+  "target_accuracy": 0.9,
+  "target_achieved": false
+}

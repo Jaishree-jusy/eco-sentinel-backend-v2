@@ -1,0 +1,45 @@
+
+@gov_bp.route("/evidence/<alert_id>/<filename>")
+def serve_evidence_file(alert_id, filename):
+    """Serve historical or run-specific evidence safely."""
+    from pathlib import Path
+
+    evidence_root = Path(EVIDENCE_STORE_DIR).resolve()
+
+    # Reject path fragments and traversal attempts.
+    if (
+        not alert_id
+        or alert_id in {".", ".."}
+        or "/" in alert_id
+        or "\\" in alert_id
+        or not filename
+        or filename in {".", ".."}
+        or "/" in filename
+        or "\\" in filename
+    ):
+        abort(400)
+
+    # Original evidence layout.
+    candidates = [
+        evidence_root / alert_id / filename,
+    ]
+
+    # New isolated evidence_run_<UUID>/<alert_id>/ layout.
+    if evidence_root.is_dir():
+        candidates.extend(
+            run_dir / alert_id / filename
+            for run_dir in evidence_root.glob("evidence_run_*")
+            if run_dir.is_dir()
+        )
+
+    for candidate in candidates:
+        try:
+            resolved = candidate.resolve()
+            resolved.relative_to(evidence_root)
+        except (ValueError, OSError):
+            continue
+
+        if resolved.is_file():
+            return send_file(resolved)
+
+    abort(404)

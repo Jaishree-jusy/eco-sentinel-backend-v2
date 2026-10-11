@@ -1,0 +1,36 @@
+{
+  "run_id": "c0c3f634-d958-41f7-8976-bb6202a77341",
+  "generated_at": "2026-10-09T18:20:37.888669+00:00",
+  "source_alert_generation_run_id": "373e1bd1-7fbe-4693-9f2e-ad13c93e1b72",
+  "source_boundary_check_run_id": "08fcf47f-fba4-47df-971b-a09ad7074a89",
+  "source_acquisition_run_id": "aebf2f55-7cc2-4e80-8f02-dd72e4c7aa40",
+  "source_imagery": {
+    "acquisition_date": "2026-09-27T05:35:40.240000+00:00",
+    "image_id": "COPERNICUS/S2_SR_HARMONIZED/20260927T051651_20260927T053403_T43PDP",
+    "cloud_cover_pct": 1.987582,
+    "cloud_masking": "Sentinel-2 SCL classes excluded: 0, 1, 3, 8, 9, 10",
+    "comparison_method": "NDVI difference: 2026-09-27 minus 2025 baseline",
+    "base_year": 2025,
+    "comparison_year": "2026-09-27",
+    "comparison_period": "2025 vs 2026-09-27",
+    "source_acquisition_run_id": "aebf2f55-7cc2-4e80-8f02-dd72e4c7aa40",
+    "source_raster_path": "C:\\Users\\jaish\\Downloads\\final-eco-sentinel\\eco-sentinel(backend)\\data\\raw_images\\forest_samples\\Forest_Sample_2025_gee_4af06426_aligned_4af06426.tif"
+  },
+  "requested_limit": 1,
+  "total_alerts_processed": 1,
+  "successful": 1,
+  "skipped_already_done": 0,
+  "failed": 0,
+  "failures": [],
+  "evidence_root": "C:\\Users\\jaish\\Downloads\\final-eco-sentinel\\eco-sentinel(backend)\\data\\evidence_store\\evidence_run_c0c3f634-d958-41f7-8976-bb6202a77341",
+  "evidence_records": [
+    {
+      "alert_id": "ALERT-IN-9da25e13ff96",
+      "evidence_dir": "C:\\Users\\jaish\\Downloads\\final-eco-sentinel\\eco-sentinel(backend)\\data\\evidence_store\\evidence_run_c0c3f634-d958-41f7-8976-bb6202a77341\\ALERT-IN-9da25e13ff96",
+      "map_snapshot": "C:\\Users\\jaish\\Downloads\\final-eco-sentinel\\eco-sentinel(backend)\\data\\evidence_store\\evidence_run_c0c3f634-d958-41f7-8976-bb6202a77341\\ALERT-IN-9da25e13ff96\\map_snapshot.png",
+      "geojson": "C:\\Users\\jaish\\Downloads\\final-eco-sentinel\\eco-sentinel(backend)\\data\\evidence_store\\evidence_run_c0c3f634-d958-41f7-8976-bb6202a77341\\ALERT-IN-9da25e13ff96\\polygon.geojson",
+      "pdf_report": "C:\\Users\\jaish\\Downloads\\final-eco-sentinel\\eco-sentinel(backend)\\data\\evidence_store\\evidence_run_c0c3f634-d958-41f7-8976-bb6202a77341\\ALERT-IN-9da25e13ff96\\report.pdf",
+      "metadata": "C:\\Users\\jaish\\Downloads\\final-eco-sentinel\\eco-sentinel(backend)\\data\\evidence_store\\evidence_run_c0c3f634-d958-41f7-8976-bb6202a77341\\ALERT-IN-9da25e13ff96\\metadata.json"
+    }
+  ]
+}

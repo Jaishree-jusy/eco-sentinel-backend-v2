@@ -1,0 +1,13 @@
+{
+  "run_id": "2b05c0a4-878c-46d3-9b6f-4f7b85b26cf5",
+  "checked_at": "2026-10-09T06:23:10.269360+00:00",
+  "source_boundary_check_run_id": "89248402-27d9-4083-be16-219968ae4c93",
+  "base_year": 2023,
+  "comparison_year": 2025,
+  "output_suffix": "rf-test-ed15535c",
+  "authorization_dataset_configured": false,
+  "output_path": "C:\\Users\\jaish\\Downloads\\final-eco-sentinel\\eco-sentinel(backend)\\data\\boundary_check\\legality_checked_2023_2025_rf-test-ed15535c.geojson",
+  "status_counts": {
+    "legal_status_unknown": 10
+  }
+}

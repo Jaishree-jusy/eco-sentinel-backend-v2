@@ -1,0 +1,7 @@
+{
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "alert_id": "ALERT-IN-7cd6eab33735", "date_time": "2026-09-15T06:52:37.819798+00:00", "area_lost_ha": 0.1066, "severity_level": "unknown", "region_division": "Dakshina Kannada", "polygon_id": "LOSS-925495e6bf9d", "ml_confidence": 0.53060603141784668, "detection_class": "random_forest_deforestation", "legality_status": "legal_status_unknown", "matched_authorization_id": null, "final_category": "legal_status_unknown", "latitude": 12.755983, "longitude": 75.020028 }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 75.019836512804233, 12.75616686602562 ], [ 75.019836512804233, 12.756077034497205 ], [ 75.019926344332646, 12.756077034497208 ], [ 75.019926344332646, 12.755807539911972 ], [ 75.020016175861059, 12.75580753991197 ], [ 75.020016175861059, 12.755717708383559 ], [ 75.020106007389472, 12.755717708383559 ], [ 75.020106007389472, 12.755987202968795 ], [ 75.020195838917886, 12.755987202968795 ], [ 75.020195838917886, 12.756166866025616 ], [ 75.020106007389472, 12.756166866025618 ], [ 75.020106007389472, 12.756077034497205 ], [ 75.020016175861059, 12.756077034497206 ], [ 75.020016175861059, 12.75616686602562 ], [ 75.019836512804233, 12.75616686602562 ] ] ] } }
+]
+}

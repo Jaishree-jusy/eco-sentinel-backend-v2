@@ -1,0 +1,42 @@
+{
+  "model": "XGBoost",
+  "dataset": "data\\supervised\\training_samples.csv",
+  "random_seed": 42,
+  "features": [
+    "delta_B1",
+    "delta_B2",
+    "delta_B3",
+    "delta_B4",
+    "delta_B5",
+    "delta_B6",
+    "delta_B7",
+    "delta_B8",
+    "delta_B8A",
+    "delta_B9",
+    "delta_B11",
+    "delta_B12",
+    "delta_ndvi",
+    "delta_nbr",
+    "delta_ndwi",
+    "delta_ndmi"
+  ],
+  "training_samples": 31997,
+  "validation_samples": 8000,
+  "final_test_samples": 10000,
+  "best_validation_threshold": 0.37000000000000016,
+  "validation_accuracy": 0.874625,
+  "test_accuracy": 0.8697,
+  "test_precision": 0.8726063293690788,
+  "test_recall": 0.8658,
+  "test_f1": 0.8691898403774722,
+  "confusion_matrix": [
+    [
+      4368,
+      632
+    ],
+    [
+      671,
+      4329
+    ]
+  ]
+}

@@ -1,0 +1,1555 @@
+{
+  "model": "xgboost (spatial-block, leak-free)",
+  "model_type": "xgboost",
+  "random_seed": 42,
+  "block_size": 64,
+  "winning_feature_set": "base_10_plus_phenology",
+  "features": [
+    "delta_B1",
+    "delta_B4",
+    "delta_B5",
+    "delta_B9",
+    "delta_B11",
+    "delta_B12",
+    "delta_ndvi",
+    "delta_nbr",
+    "delta_ndwi",
+    "delta_ndmi",
+    "delta_snbr",
+    "nbr_change_zscore",
+    "nbr_local_median_2023",
+    "nbr_local_median_2025",
+    "snbr_2023",
+    "snbr_2025"
+  ],
+  "hyperparameters": {
+    "subsample": 1.0,
+    "reg_lambda": 0.5,
+    "n_estimators": 300,
+    "max_depth": 6,
+    "learning_rate": 0.02,
+    "colsample_bytree": 1.0
+  },
+  "threshold": 0.45000000000000023,
+  "validation_accuracy": 0.8258454341682098,
+  "validation_f1": 0.815258968262173,
+  "validation_auc": 0.8926994442463753,
+  "test_accuracy": 0.8356969205834684,
+  "test_precision": 0.912109375,
+  "test_recall": 0.7474989995998399,
+  "test_f1": 0.8216406421816582,
+  "test_roc_auc": 0.8896488427131214,
+  "confusion_matrix": [
+    [
+      4514,
+      360
+    ],
+    [
+      1262,
+      3736
+    ]
+  ],
+  "feature_importance": {
+    "delta_B12": 0.36044803261756897,
+    "delta_nbr": 0.35258781909942627,
+    "delta_ndmi": 0.07076951861381531,
+    "delta_B11": 0.03992851451039314,
+    "delta_snbr": 0.02724163606762886,
+    "nbr_local_median_2023": 0.023947669193148613,
+    "snbr_2025": 0.018858473747968674,
+    "delta_B1": 0.017346486449241638,
+    "delta_B9": 0.016864122822880745,
+    "nbr_change_zscore": 0.015737969428300858,
+    "nbr_local_median_2025": 0.01256087701767683,
+    "snbr_2023": 0.010712905786931515,
+    "delta_B5": 0.009708073921501637,
+    "delta_B4": 0.008903007954359055,
+    "delta_ndwi": 0.008738880045711994,
+    "delta_ndvi": 0.005645994562655687
+  },
+  "n_search_trials": 80,
+  "search_results": [
+    {
+      "trial": 1,
+      "feature_set": "base_10",
+      "model_type": "random_forest",
+      "n_features": 10,
+      "params": {
+        "n_estimators": 500,
+        "min_samples_leaf": 2,
+        "max_features": "sqrt",
+        "max_depth": 30,
+        "class_weight": "balanced"
+      },
+      "threshold": 0.5700000000000003,
+      "val_accuracy": 0.8080109151154858,
+      "val_f1": 0.7891695205479452,
+      "val_auc": 0.8625101892732447,
+      "seconds": 17.0
+    },
+    {
+      "trial": 2,
+      "feature_set": "base_10",
+      "model_type": "random_forest",
+      "n_features": 10,
+      "params": {
+        "n_estimators": 300,
+        "min_samples_leaf": 1,
+        "max_features": 0.7,
+        "max_depth": 20,
+        "class_weight": null
+      },
+      "threshold": 0.5600000000000003,
+      "val_accuracy": 0.8065490692914921,
+      "val_f1": 0.7876323954209907,
+      "val_auc": 0.862535674351931,
+      "seconds": 40.8
+    },
+    {
+      "trial": 3,
+      "feature_set": "base_10",
+      "model_type": "random_forest",
+      "n_features": 10,
+      "params": {
+        "n_estimators": 300,
+        "min_samples_leaf": 2,
+        "max_features": "sqrt",
+        "max_depth": 20,
+        "class_weight": null
+      },
+      "threshold": 0.5500000000000003,
+      "val_accuracy": 0.8080109151154858,
+      "val_f1": 0.7900682011935208,
+      "val_auc": 0.8653689337233407,
+      "seconds": 23.0
+    },
+    {
+      "trial": 4,
+      "feature_set": "base_10",
+      "model_type": "random_forest",
+      "n_features": 10,
+      "params": {
+        "n_estimators": 500,
+        "min_samples_leaf": 1,
+        "max_features": 0.7,
+        "max_depth": 30,
+        "class_weight": "balanced"
+      },
+      "threshold": 0.5400000000000003,
+      "val_accuracy": 0.8064516129032258,
+      "val_f1": 0.7883631713554987,
+      "val_auc": 0.8587739130547325,
+      "seconds": 75.3
+    },
+    {
+      "trial": 5,
+      "feature_set": "base_10",
+      "model_type": "random_forest",
+      "n_features": 10,
+      "params": {
+        "n_estimators": 500,
+        "min_samples_leaf": 4,
+        "max_features": "sqrt",
+        "max_depth": 20,
+        "class_weight": "balanced"
+      },
+      "threshold": 0.5800000000000003,
+      "val_accuracy": 0.8078160023389533,
+      "val_f1": 0.7887746358183376,
+      "val_auc": 0.8656317402703908,
+      "seconds": 12.1
+    },
+    {
+      "trial": 6,
+      "feature_set": "base_10",
+      "model_type": "random_forest",
+      "n_features": 10,
+      "params": {
+        "n_estimators": 300,
+        "min_samples_leaf": 2,
+        "max_features": 0.7,
+        "max_depth": 20,
+        "class_weight": "balanced"
+      },
+      "threshold": 0.5600000000000003,
+      "val_accuracy": 0.8070363512328234,
+      "val_f1": 0.7887323943661971,
+      "val_auc": 0.8618708925533094,
+      "seconds": 29.5
+    },
+    {
+      "trial": 7,
+      "feature_set": "base_10",
+      "model_type": "random_forest",
+      "n_features": 10,
+      "params": {
+        "n_estimators": 200,
+        "min_samples_leaf": 2,
+        "max_features": 0.7,
+        "max_depth": 30,
+        "class_weight": null
+      },
+      "threshold": 0.5500000000000003,
+      "val_accuracy": 0.8074261767858883,
+      "val_f1": 0.7896081771720613,
+      "val_auc": 0.8595040158317343,
+      "seconds": 21.1
+    },
+    {
+      "trial": 8,
+      "feature_set": "base_10",
+      "model_type": "random_forest",
+      "n_features": 10,
+      "params": {
+        "n_estimators": 200,
+        "min_samples_leaf": 1,
+        "max_features": 0.7,
+        "max_depth": 40,
+        "class_weight": null
+      },
+      "threshold": 0.5200000000000002,
+      "val_accuracy": 0.8053795926322971,
+      "val_f1": 0.7886548841147212,
+      "val_auc": 0.8580956749823013,
+      "seconds": 22.2
+    },
+    {
+      "trial": 9,
+      "feature_set": "base_10",
+      "model_type": "xgboost",
+      "n_features": 10,
+      "params": {
+        "subsample": 0.7,
+        "reg_lambda": 0.5,
+        "n_estimators": 600,
+        "max_depth": 8,
+        "learning_rate": 0.08,
+        "colsample_bytree": 0.85
+      },
+      "threshold": 0.5200000000000002,
+      "val_accuracy": 0.8019686190429782,
+      "val_f1": 0.7851099830795262,
+      "val_auc": 0.8536656298293652,
+      "seconds": 6.1
+    },
+    {
+      "trial": 10,
+      "feature_set": "base_10",
+      "model_type": "xgboost",
+      "n_features": 10,
+      "params": {
+        "subsample": 0.85,
+        "reg_lambda": 1.0,
+        "n_estimators": 600,
+        "max_depth": 8,
+        "learning_rate": 0.05,
+        "colsample_bytree": 0.7
+      },
+      "threshold": 0.5500000000000003,
+      "val_accuracy": 0.8056719617970958,
+      "val_f1": 0.7874200426439233,
+      "val_auc": 0.8555292381038736,
+      "seconds": 5.6
+    },
+    {
+      "trial": 11,
+      "feature_set": "base_10",
+      "model_type": "xgboost",
+      "n_features": 10,
+      "params": {
+        "subsample": 1.0,
+        "reg_lambda": 1.0,
+        "n_estimators": 300,
+        "max_depth": 8,
+        "learning_rate": 0.02,
+        "colsample_bytree": 0.85
+      },
+      "threshold": 0.6000000000000003,
+      "val_accuracy": 0.8087905662216158,
+      "val_f1": 0.7891682785299806,
+      "val_auc": 0.8646991082011555,
+      "seconds": 3.3
+    },
+    {
+      "trial": 12,
+      "feature_set": "base_10",
+      "model_type": "xgboost",
+      "n_features": 10,
+      "params": {
+        "subsample": 0.85,
+        "reg_lambda": 1.0,
+        "n_estimators": 300,
+        "max_depth": 6,
+        "learning_rate": 0.05,
+        "colsample_bytree": 0.85
+      },
+      "threshold": 0.5700000000000003,
+      "val_accuracy": 0.8071338076210895,
+      "val_f1": 0.7885005877952335,
+      "val_auc": 0.8618780679638134,
+      "seconds": 2.2
+    },
+    {
+      "trial": 13,
+      "feature_set": "base_10",
+      "model_type": "xgboost",
+      "n_features": 10,
+      "params": {
+        "subsample": 1.0,
+        "reg_lambda": 0.5,
+        "n_estimators": 300,
+        "max_depth": 6,
+        "learning_rate": 0.02,
+        "colsample_bytree": 1.0
+      },
+      "threshold": 0.5600000000000003,
+      "val_accuracy": 0.807328720397622,
+      "val_f1": 0.7892099370935067,
+      "val_auc": 0.8673986803487471,
+      "seconds": 2.2
+    },
+    {
+      "trial": 14,
+      "feature_set": "base_10",
+      "model_type": "xgboost",
+      "n_features": 10,
+      "params": {
+        "subsample": 1.0,
+        "reg_lambda": 1.0,
+        "n_estimators": 1000,
+        "max_depth": 4,
+        "learning_rate": 0.02,
+        "colsample_bytree": 0.85
+      },
+      "threshold": 0.5400000000000003,
+      "val_accuracy": 0.8074261767858883,
+      "val_f1": 0.7902780725960518,
+      "val_auc": 0.8666433779868455,
+      "seconds": 4.8
+    },
+    {
+      "trial": 15,
+      "feature_set": "base_10",
+      "model_type": "xgboost",
+      "n_features": 10,
+      "params": {
+        "subsample": 0.7,
+        "reg_lambda": 0.5,
+        "n_estimators": 1000,
+        "max_depth": 8,
+        "learning_rate": 0.02,
+        "colsample_bytree": 0.7
+      },
+      "threshold": 0.5400000000000003,
+      "val_accuracy": 0.8070363512328234,
+      "val_f1": 0.7890475175793735,
+      "val_auc": 0.8575320150829032,
+      "seconds": 9.8
+    },
+    {
+      "trial": 16,
+      "feature_set": "base_10",
+      "model_type": "xgboost",
+      "n_features": 10,
+      "params": {
+        "subsample": 0.7,
+        "reg_lambda": 0.5,
+        "n_estimators": 300,
+        "max_depth": 4,
+        "learning_rate": 0.05,
+        "colsample_bytree": 0.7
+      },
+      "threshold": 0.5200000000000002,
+      "val_accuracy": 0.808498197056817,
+      "val_f1": 0.7921734531993654,
+      "val_auc": 0.8673801993842927,
+      "seconds": 1.9
+    },
+    {
+      "trial": 17,
+      "feature_set": "all_bands",
+      "model_type": "random_forest",
+      "n_features": 15,
+      "params": {
+        "n_estimators": 500,
+        "min_samples_leaf": 2,
+        "max_features": "sqrt",
+        "max_depth": 30,
+        "class_weight": "balanced"
+      },
+      "threshold": 0.49000000000000027,
+      "val_accuracy": 0.8094727609394796,
+      "val_f1": 0.7944917481341323,
+      "val_auc": 0.8678815835723678,
+      "seconds": 31.1
+    },
+    {
+      "trial": 18,
+      "feature_set": "all_bands",
+      "model_type": "random_forest",
+      "n_features": 15,
+      "params": {
+        "n_estimators": 300,
+        "min_samples_leaf": 1,
+        "max_features": 0.7,
+        "max_depth": 20,
+        "class_weight": null
+      },
+      "threshold": 0.5100000000000002,
+      "val_accuracy": 0.8078160023389533,
+      "val_f1": 0.7912343849248359,
+      "val_auc": 0.8647996971786438,
+      "seconds": 41.8
+    },
+    {
+      "trial": 19,
+      "feature_set": "all_bands",
+      "model_type": "random_forest",
+      "n_features": 15,
+      "params": {
+        "n_estimators": 300,
+        "min_samples_leaf": 2,
+        "max_features": "sqrt",
+        "max_depth": 20,
+        "class_weight": null
+      },
+      "threshold": 0.47000000000000025,
+      "val_accuracy": 0.8093753045512133,
+      "val_f1": 0.7949685534591195,
+      "val_auc": 0.8682326267324048,
+      "seconds": 16.4
+    },
+    {
+      "trial": 20,
+      "feature_set": "all_bands",
+      "model_type": "random_forest",
+      "n_features": 15,
+      "params": {
+        "n_estimators": 500,
+        "min_samples_leaf": 1,
+        "max_features": 0.7,
+        "max_depth": 30,
+        "class_weight": "balanced"
+      },
+      "threshold": 0.48000000000000026,
+      "val_accuracy": 0.808108371503752,
+      "val_f1": 0.7932808398950131,
+      "val_auc": 0.8625454763052719,
+      "seconds": 87.8
+    },
+    {
+      "trial": 21,
+      "feature_set": "all_bands",
+      "model_type": "random_forest",
+      "n_features": 15,
+      "params": {
+        "n_estimators": 500,
+        "min_samples_leaf": 4,
+        "max_features": "sqrt",
+        "max_depth": 20,
+        "class_weight": "balanced"
+      },
+      "threshold": 0.5100000000000002,
+      "val_accuracy": 0.8091803917746808,
+      "val_f1": 0.7933291112518471,
+      "val_auc": 0.8690210844393935,
+      "seconds": 23.7
+    },
+    {
+      "trial": 22,
+      "feature_set": "all_bands",
+      "model_type": "random_forest",
+      "n_features": 15,
+      "params": {
+        "n_estimators": 300,
+        "min_samples_leaf": 2,
+        "max_features": 0.7,
+        "max_depth": 20,
+        "class_weight": "balanced"
+      },
+      "threshold": 0.48000000000000026,
+      "val_accuracy": 0.8088880226098821,
+      "val_f1": 0.7942071570993808,
+      "val_auc": 0.8648466323571653,
+      "seconds": 45.7
+    },
+    {
+      "trial": 23,
+      "feature_set": "all_bands",
+      "model_type": "random_forest",
+      "n_features": 15,
+      "params": {
+        "n_estimators": 200,
+        "min_samples_leaf": 2,
+        "max_features": 0.7,
+        "max_depth": 30,
+        "class_weight": null
+      },
+      "threshold": 0.5000000000000002,
+      "val_accuracy": 0.8080109151154858,
+      "val_f1": 0.7923693086003373,
+      "val_auc": 0.8632303378335529,
+      "seconds": 31.7
+    },
+    {
+      "trial": 24,
+      "feature_set": "all_bands",
+      "model_type": "random_forest",
+      "n_features": 15,
+      "params": {
+        "n_estimators": 200,
+        "min_samples_leaf": 1,
+        "max_features": 0.7,
+        "max_depth": 40,
+        "class_weight": null
+      },
+      "threshold": 0.5000000000000002,
+      "val_accuracy": 0.8084007406685508,
+      "val_f1": 0.7923970432946146,
+      "val_auc": 0.8629557689424936,
+      "seconds": 28.1
+    },
+    {
+      "trial": 25,
+      "feature_set": "all_bands",
+      "model_type": "xgboost",
+      "n_features": 15,
+      "params": {
+        "subsample": 0.7,
+        "reg_lambda": 0.5,
+        "n_estimators": 600,
+        "max_depth": 8,
+        "learning_rate": 0.08,
+        "colsample_bytree": 0.85
+      },
+      "threshold": 0.5700000000000003,
+      "val_accuracy": 0.8058668745736283,
+      "val_f1": 0.7869974337040205,
+      "val_auc": 0.8577777681344321,
+      "seconds": 7.3
+    },
+    {
+      "trial": 26,
+      "feature_set": "all_bands",
+      "model_type": "xgboost",
+      "n_features": 15,
+      "params": {
+        "subsample": 0.85,
+        "reg_lambda": 1.0,
+        "n_estimators": 600,
+        "max_depth": 8,
+        "learning_rate": 0.05,
+        "colsample_bytree": 0.7
+      },
+      "threshold": 0.5100000000000002,
+      "val_accuracy": 0.8085956534450833,
+      "val_f1": 0.7920813042557696,
+      "val_auc": 0.8599479015711826,
+      "seconds": 7.2
+    },
+    {
+      "trial": 27,
+      "feature_set": "all_bands",
+      "model_type": "xgboost",
+      "n_features": 15,
+      "params": {
+        "subsample": 1.0,
+        "reg_lambda": 1.0,
+        "n_estimators": 300,
+        "max_depth": 8,
+        "learning_rate": 0.02,
+        "colsample_bytree": 0.85
+      },
+      "threshold": 0.5500000000000003,
+      "val_accuracy": 0.8099600428808108,
+      "val_f1": 0.7921551907908762,
+      "val_auc": 0.8662637473823075,
+      "seconds": 4.1
+    },
+    {
+      "trial": 28,
+      "feature_set": "all_bands",
+      "model_type": "xgboost",
+      "n_features": 15,
+      "params": {
+        "subsample": 0.85,
+        "reg_lambda": 1.0,
+        "n_estimators": 300,
+        "max_depth": 6,
+        "learning_rate": 0.05,
+        "colsample_bytree": 0.85
+      },
+      "threshold": 0.5600000000000003,
+      "val_accuracy": 0.8098625864925446,
+      "val_f1": 0.7916711158569141,
+      "val_auc": 0.8666680827158483,
+      "seconds": 2.7
+    },
+    {
+      "trial": 29,
+      "feature_set": "all_bands",
+      "model_type": "xgboost",
+      "n_features": 15,
+      "params": {
+        "subsample": 1.0,
+        "reg_lambda": 0.5,
+        "n_estimators": 300,
+        "max_depth": 6,
+        "learning_rate": 0.02,
+        "colsample_bytree": 1.0
+      },
+      "threshold": 0.5900000000000003,
+      "val_accuracy": 0.8088880226098821,
+      "val_f1": 0.7893888948555472,
+      "val_auc": 0.8681365104909069,
+      "seconds": 2.6
+    },
+    {
+      "trial": 30,
+      "feature_set": "all_bands",
+      "model_type": "xgboost",
+      "n_features": 15,
+      "params": {
+        "subsample": 1.0,
+        "reg_lambda": 1.0,
+        "n_estimators": 1000,
+        "max_depth": 4,
+        "learning_rate": 0.02,
+        "colsample_bytree": 0.85
+      },
+      "threshold": 0.45000000000000023,
+      "val_accuracy": 0.8080109151154858,
+      "val_f1": 0.7949198417655632,
+      "val_auc": 0.867520243603093,
+      "seconds": 5.1
+    },
+    {
+      "trial": 31,
+      "feature_set": "all_bands",
+      "model_type": "xgboost",
+      "n_features": 15,
+      "params": {
+        "subsample": 0.7,
+        "reg_lambda": 0.5,
+        "n_estimators": 1000,
+        "max_depth": 8,
+        "learning_rate": 0.02,
+        "colsample_bytree": 0.7
+      },
+      "threshold": 0.4400000000000002,
+      "val_accuracy": 0.8083032842802845,
+      "val_f1": 0.7951255077596083,
+      "val_auc": 0.86327053535871,
+      "seconds": 12.2
+    },
+    {
+      "trial": 32,
+      "feature_set": "all_bands",
+      "model_type": "xgboost",
+      "n_features": 15,
+      "params": {
+        "subsample": 0.7,
+        "reg_lambda": 0.5,
+        "n_estimators": 300,
+        "max_depth": 4,
+        "learning_rate": 0.05,
+        "colsample_bytree": 0.7
+      },
+      "threshold": 0.5000000000000002,
+      "val_accuracy": 0.8086931098333495,
+      "val_f1": 0.7931288860786173,
+      "val_auc": 0.8691195797957798,
+      "seconds": 2.0
+    },
+    {
+      "trial": 33,
+      "feature_set": "base_10_plus_phenology",
+      "model_type": "random_forest",
+      "n_features": 16,
+      "params": {
+        "n_estimators": 500,
+        "min_samples_leaf": 2,
+        "max_features": "sqrt",
+        "max_depth": 30,
+        "class_weight": "balanced"
+      },
+      "threshold": 0.4300000000000002,
+      "val_accuracy": 0.8233115680732872,
+      "val_f1": 0.8144509262102139,
+      "val_auc": 0.8866406380078107,
+      "seconds": 44.0
+    },
+    {
+      "trial": 34,
+      "feature_set": "base_10_plus_phenology",
+      "model_type": "random_forest",
+      "n_features": 16,
+      "params": {
+        "n_estimators": 300,
+        "min_samples_leaf": 1,
+        "max_features": 0.7,
+        "max_depth": 20,
+        "class_weight": null
+      },
+      "threshold": 0.4000000000000002,
+      "val_accuracy": 0.8217522658610272,
+      "val_f1": 0.8148972776034814,
+      "val_auc": 0.8878885123162401,
+      "seconds": 53.4
+    },
+    {
+      "trial": 35,
+      "feature_set": "base_10_plus_phenology",
+      "model_type": "random_forest",
+      "n_features": 16,
+      "params": {
+        "n_estimators": 300,
+        "min_samples_leaf": 2,
+        "max_features": "sqrt",
+        "max_depth": 20,
+        "class_weight": null
+      },
+      "threshold": 0.46000000000000024,
+      "val_accuracy": 0.8228242861319559,
+      "val_f1": 0.8115280945469625,
+      "val_auc": 0.8906845432978735,
+      "seconds": 19.4
+    },
+    {
+      "trial": 36,
+      "feature_set": "base_10_plus_phenology",
+      "model_type": "random_forest",
+      "n_features": 16,
+      "params": {
+        "n_estimators": 500,
+        "min_samples_leaf": 1,
+        "max_features": 0.7,
+        "max_depth": 30,
+        "class_weight": "balanced"
+      },
+      "threshold": 0.47000000000000025,
+      "val_accuracy": 0.8213624403079622,
+      "val_f1": 0.8102680881896284,
+      "val_auc": 0.883550205833407,
+      "seconds": 113.9
+    },
+    {
+      "trial": 37,
+      "feature_set": "base_10_plus_phenology",
+      "model_type": "random_forest",
+      "n_features": 16,
+      "params": {
+        "n_estimators": 500,
+        "min_samples_leaf": 4,
+        "max_features": "sqrt",
+        "max_depth": 20,
+        "class_weight": "balanced"
+      },
+      "threshold": 0.4100000000000002,
+      "val_accuracy": 0.823993762791151,
+      "val_f1": 0.8165007112375533,
+      "val_auc": 0.8901570078789434,
+      "seconds": 31.9
+    },
+    {
+      "trial": 38,
+      "feature_set": "base_10_plus_phenology",
+      "model_type": "random_forest",
+      "n_features": 16,
+      "params": {
+        "n_estimators": 300,
+        "min_samples_leaf": 2,
+        "max_features": 0.7,
+        "max_depth": 20,
+        "class_weight": "balanced"
+      },
+      "threshold": 0.47000000000000025,
+      "val_accuracy": 0.8207777019783646,
+      "val_f1": 0.8091729791428868,
+      "val_auc": 0.8866740788466843,
+      "seconds": 64.2
+    },
+    {
+      "trial": 39,
+      "feature_set": "base_10_plus_phenology",
+      "model_type": "random_forest",
+      "n_features": 16,
+      "params": {
+        "n_estimators": 200,
+        "min_samples_leaf": 2,
+        "max_features": 0.7,
+        "max_depth": 30,
+        "class_weight": null
+      },
+      "threshold": 0.49000000000000027,
+      "val_accuracy": 0.8214598966962284,
+      "val_f1": 0.8093255620316403,
+      "val_auc": 0.8844403373942731,
+      "seconds": 40.5
+    },
+    {
+      "trial": 40,
+      "feature_set": "base_10_plus_phenology",
+      "model_type": "random_forest",
+      "n_features": 16,
+      "params": {
+        "n_estimators": 200,
+        "min_samples_leaf": 1,
+        "max_features": 0.7,
+        "max_depth": 40,
+        "class_weight": null
+      },
+      "threshold": 0.49000000000000027,
+      "val_accuracy": 0.8199005944839685,
+      "val_f1": 0.807098121085595,
+      "val_auc": 0.882271688525213,
+      "seconds": 43.7
+    },
+    {
+      "trial": 41,
+      "feature_set": "base_10_plus_phenology",
+      "model_type": "xgboost",
+      "n_features": 16,
+      "params": {
+        "subsample": 0.7,
+        "reg_lambda": 0.5,
+        "n_estimators": 600,
+        "max_depth": 8,
+        "learning_rate": 0.08,
+        "colsample_bytree": 0.85
+      },
+      "threshold": 0.45000000000000023,
+      "val_accuracy": 0.8158074261767859,
+      "val_f1": 0.8038198048577954,
+      "val_auc": 0.8811952627521129,
+      "seconds": 8.5
+    },
+    {
+      "trial": 42,
+      "feature_set": "base_10_plus_phenology",
+      "model_type": "xgboost",
+      "n_features": 16,
+      "params": {
+        "subsample": 0.85,
+        "reg_lambda": 1.0,
+        "n_estimators": 600,
+        "max_depth": 8,
+        "learning_rate": 0.05,
+        "colsample_bytree": 0.7
+      },
+      "threshold": 0.5100000000000002,
+      "val_accuracy": 0.8184387486599747,
+      "val_f1": 0.8042861645130791,
+      "val_auc": 0.8837611857417247,
+      "seconds": 9.8
+    },
+    {
+      "trial": 43,
+      "feature_set": "base_10_plus_phenology",
+      "model_type": "xgboost",
+      "n_features": 16,
+      "params": {
+        "subsample": 1.0,
+        "reg_lambda": 1.0,
+        "n_estimators": 300,
+        "max_depth": 8,
+        "learning_rate": 0.02,
+        "colsample_bytree": 0.85
+      },
+      "threshold": 0.47000000000000025,
+      "val_accuracy": 0.8252606958386122,
+      "val_f1": 0.8135205408216328,
+      "val_auc": 0.8908647660089117,
+      "seconds": 5.5
+    },
+    {
+      "trial": 44,
+      "feature_set": "base_10_plus_phenology",
+      "model_type": "xgboost",
+      "n_features": 16,
+      "params": {
+        "subsample": 0.85,
+        "reg_lambda": 1.0,
+        "n_estimators": 300,
+        "max_depth": 6,
+        "learning_rate": 0.05,
+        "colsample_bytree": 0.85
+      },
+      "threshold": 0.4400000000000002,
+      "val_accuracy": 0.8231166552967547,
+      "val_f1": 0.8143602332003682,
+      "val_auc": 0.88810990323131,
+      "seconds": 3.4
+    },
+    {
+      "trial": 45,
+      "feature_set": "base_10_plus_phenology",
+      "model_type": "xgboost",
+      "n_features": 16,
+      "params": {
+        "subsample": 1.0,
+        "reg_lambda": 0.5,
+        "n_estimators": 300,
+        "max_depth": 6,
+        "learning_rate": 0.02,
+        "colsample_bytree": 1.0
+      },
+      "threshold": 0.45000000000000023,
+      "val_accuracy": 0.8258454341682098,
+      "val_f1": 0.815258968262173,
+      "val_auc": 0.8926994442463753,
+      "seconds": 1.3
+    },
+    {
+      "trial": 46,
+      "feature_set": "base_10_plus_phenology",
+      "model_type": "xgboost",
+      "n_features": 16,
+      "params": {
+        "subsample": 1.0,
+        "reg_lambda": 1.0,
+        "n_estimators": 1000,
+        "max_depth": 4,
+        "learning_rate": 0.02,
+        "colsample_bytree": 0.85
+      },
+      "threshold": 0.47000000000000025,
+      "val_accuracy": 0.8234090244615535,
+      "val_f1": 0.8125,
+      "val_auc": 0.8890394139018116,
+      "seconds": 6.4
+    },
+    {
+      "trial": 47,
+      "feature_set": "base_10_plus_phenology",
+      "model_type": "xgboost",
+      "n_features": 16,
+      "params": {
+        "subsample": 0.7,
+        "reg_lambda": 0.5,
+        "n_estimators": 1000,
+        "max_depth": 8,
+        "learning_rate": 0.02,
+        "colsample_bytree": 0.7
+      },
+      "threshold": 0.4100000000000002,
+      "val_accuracy": 0.819705681707436,
+      "val_f1": 0.8109544246883302,
+      "val_auc": 0.8854848449620283,
+      "seconds": 17.9
+    },
+    {
+      "trial": 48,
+      "feature_set": "base_10_plus_phenology",
+      "model_type": "xgboost",
+      "n_features": 16,
+      "params": {
+        "subsample": 0.7,
+        "reg_lambda": 0.5,
+        "n_estimators": 300,
+        "max_depth": 4,
+        "learning_rate": 0.05,
+        "colsample_bytree": 0.7
+      },
+      "threshold": 0.48000000000000026,
+      "val_accuracy": 0.8237013936263522,
+      "val_f1": 0.8121300238861772,
+      "val_auc": 0.892056664502243,
+      "seconds": 2.0
+    },
+    {
+      "trial": 49,
+      "feature_set": "all_bands_plus_phenology",
+      "model_type": "random_forest",
+      "n_features": 21,
+      "params": {
+        "n_estimators": 500,
+        "min_samples_leaf": 2,
+        "max_features": "sqrt",
+        "max_depth": 30,
+        "class_weight": "balanced"
+      },
+      "threshold": 0.5000000000000002,
+      "val_accuracy": 0.8215573530844947,
+      "val_f1": 0.808010904896718,
+      "val_auc": 0.8860790717295145,
+      "seconds": 62.9
+    },
+    {
+      "trial": 50,
+      "feature_set": "all_bands_plus_phenology",
+      "model_type": "random_forest",
+      "n_features": 21,
+      "params": {
+        "n_estimators": 300,
+        "min_samples_leaf": 1,
+        "max_features": 0.7,
+        "max_depth": 20,
+        "class_weight": null
+      },
+      "threshold": 0.4300000000000002,
+      "val_accuracy": 0.8223370041906247,
+      "val_f1": 0.8129680927464861,
+      "val_auc": 0.8854120059806,
+      "seconds": 85.1
+    },
+    {
+      "trial": 51,
+      "feature_set": "all_bands_plus_phenology",
+      "model_type": "random_forest",
+      "n_features": 21,
+      "params": {
+        "n_estimators": 300,
+        "min_samples_leaf": 2,
+        "max_features": "sqrt",
+        "max_depth": 20,
+        "class_weight": null
+      },
+      "threshold": 0.48000000000000026,
+      "val_accuracy": 0.8224344605788909,
+      "val_f1": 0.8094142259414226,
+      "val_auc": 0.8895460321426415,
+      "seconds": 16.5
+    },
+    {
+      "trial": 52,
+      "feature_set": "all_bands_plus_phenology",
+      "model_type": "random_forest",
+      "n_features": 21,
+      "params": {
+        "n_estimators": 500,
+        "min_samples_leaf": 1,
+        "max_features": 0.7,
+        "max_depth": 30,
+        "class_weight": "balanced"
+      },
+      "threshold": 0.4300000000000002,
+      "val_accuracy": 0.8210700711431634,
+      "val_f1": 0.8118852459016394,
+      "val_auc": 0.8835718652953526,
+      "seconds": 119.8
+    },
+    {
+      "trial": 53,
+      "feature_set": "all_bands_plus_phenology",
+      "model_type": "random_forest",
+      "n_features": 21,
+      "params": {
+        "n_estimators": 500,
+        "min_samples_leaf": 4,
+        "max_features": "sqrt",
+        "max_depth": 20,
+        "class_weight": "balanced"
+      },
+      "threshold": 0.48000000000000026,
+      "val_accuracy": 0.8221420914140922,
+      "val_f1": 0.8093596573696856,
+      "val_auc": 0.8892141360992276,
+      "seconds": 37.0
+    },
+    {
+      "trial": 54,
+      "feature_set": "all_bands_plus_phenology",
+      "model_type": "random_forest",
+      "n_features": 21,
+      "params": {
+        "n_estimators": 300,
+        "min_samples_leaf": 2,
+        "max_features": 0.7,
+        "max_depth": 20,
+        "class_weight": "balanced"
+      },
+      "threshold": 0.4200000000000002,
+      "val_accuracy": 0.8220446350258259,
+      "val_f1": 0.8133687653311529,
+      "val_auc": 0.8868604111247564,
+      "seconds": 89.3
+    },
+    {
+      "trial": 55,
+      "feature_set": "all_bands_plus_phenology",
+      "model_type": "random_forest",
+      "n_features": 21,
+      "params": {
+        "n_estimators": 200,
+        "min_samples_leaf": 2,
+        "max_features": 0.7,
+        "max_depth": 30,
+        "class_weight": null
+      },
+      "threshold": 0.49000000000000027,
+      "val_accuracy": 0.820095507260501,
+      "val_f1": 0.8071458420392812,
+      "val_auc": 0.8822206803020022,
+      "seconds": 60.9
+    },
+    {
+      "trial": 56,
+      "feature_set": "all_bands_plus_phenology",
+      "model_type": "random_forest",
+      "n_features": 21,
+      "params": {
+        "n_estimators": 200,
+        "min_samples_leaf": 1,
+        "max_features": 0.7,
+        "max_depth": 40,
+        "class_weight": null
+      },
+      "threshold": 0.4400000000000002,
+      "val_accuracy": 0.8222395478023584,
+      "val_f1": 0.8125,
+      "val_auc": 0.8838413143311714,
+      "seconds": 127.9
+    },
+    {
+      "trial": 57,
+      "feature_set": "all_bands_plus_phenology",
+      "model_type": "xgboost",
+      "n_features": 21,
+      "params": {
+        "subsample": 0.7,
+        "reg_lambda": 0.5,
+        "n_estimators": 600,
+        "max_depth": 8,
+        "learning_rate": 0.08,
+        "colsample_bytree": 0.85
+      },
+      "threshold": 0.4300000000000002,
+      "val_accuracy": 0.8152226878471884,
+      "val_f1": 0.803156146179402,
+      "val_auc": 0.8817579329397174,
+      "seconds": 9.8
+    },
+    {
+      "trial": 58,
+      "feature_set": "all_bands_plus_phenology",
+      "model_type": "xgboost",
+      "n_features": 21,
+      "params": {
+        "subsample": 0.85,
+        "reg_lambda": 1.0,
+        "n_estimators": 600,
+        "max_depth": 8,
+        "learning_rate": 0.05,
+        "colsample_bytree": 0.7
+      },
+      "threshold": 0.5100000000000002,
+      "val_accuracy": 0.8183412922717084,
+      "val_f1": 0.8033755274261604,
+      "val_auc": 0.883576166735071,
+      "seconds": 8.8
+    },
+    {
+      "trial": 59,
+      "feature_set": "all_bands_plus_phenology",
+      "model_type": "xgboost",
+      "n_features": 21,
+      "params": {
+        "subsample": 1.0,
+        "reg_lambda": 1.0,
+        "n_estimators": 300,
+        "max_depth": 8,
+        "learning_rate": 0.02,
+        "colsample_bytree": 0.85
+      },
+      "threshold": 0.4100000000000002,
+      "val_accuracy": 0.8227268297436897,
+      "val_f1": 0.814065215169171,
+      "val_auc": 0.8921359556432491,
+      "seconds": 5.3
+    },
+    {
+      "trial": 60,
+      "feature_set": "all_bands_plus_phenology",
+      "model_type": "xgboost",
+      "n_features": 21,
+      "params": {
+        "subsample": 0.85,
+        "reg_lambda": 1.0,
+        "n_estimators": 300,
+        "max_depth": 6,
+        "learning_rate": 0.05,
+        "colsample_bytree": 0.85
+      },
+      "threshold": 0.46000000000000024,
+      "val_accuracy": 0.8206802455900984,
+      "val_f1": 0.8096420442789158,
+      "val_auc": 0.8884858224166219,
+      "seconds": 3.6
+    },
+    {
+      "trial": 61,
+      "feature_set": "all_bands_plus_phenology",
+      "model_type": "xgboost",
+      "n_features": 21,
+      "params": {
+        "subsample": 1.0,
+        "reg_lambda": 0.5,
+        "n_estimators": 300,
+        "max_depth": 6,
+        "learning_rate": 0.02,
+        "colsample_bytree": 1.0
+      },
+      "threshold": 0.49000000000000027,
+      "val_accuracy": 0.8242861319559497,
+      "val_f1": 0.8113424714868682,
+      "val_auc": 0.8922770086067622,
+      "seconds": 3.3
+    },
+    {
+      "trial": 62,
+      "feature_set": "all_bands_plus_phenology",
+      "model_type": "xgboost",
+      "n_features": 21,
+      "params": {
+        "subsample": 1.0,
+        "reg_lambda": 1.0,
+        "n_estimators": 1000,
+        "max_depth": 4,
+        "learning_rate": 0.02,
+        "colsample_bytree": 0.85
+      },
+      "threshold": 0.49000000000000027,
+      "val_accuracy": 0.8219471786375597,
+      "val_f1": 0.8091906005221932,
+      "val_auc": 0.8901061899849236,
+      "seconds": 5.9
+    },
+    {
+      "trial": 63,
+      "feature_set": "all_bands_plus_phenology",
+      "model_type": "xgboost",
+      "n_features": 21,
+      "params": {
+        "subsample": 0.7,
+        "reg_lambda": 0.5,
+        "n_estimators": 1000,
+        "max_depth": 8,
+        "learning_rate": 0.02,
+        "colsample_bytree": 0.7
+      },
+      "threshold": 0.5000000000000002,
+      "val_accuracy": 0.8201929636487671,
+      "val_f1": 0.8058507839629591,
+      "val_auc": 0.8867511812019928,
+      "seconds": 17.6
+    },
+    {
+      "trial": 64,
+      "feature_set": "all_bands_plus_phenology",
+      "model_type": "xgboost",
+      "n_features": 21,
+      "params": {
+        "subsample": 0.7,
+        "reg_lambda": 0.5,
+        "n_estimators": 300,
+        "max_depth": 4,
+        "learning_rate": 0.05,
+        "colsample_bytree": 0.7
+      },
+      "threshold": 0.48000000000000026,
+      "val_accuracy": 0.8233115680732872,
+      "val_f1": 0.8109291896965273,
+      "val_auc": 0.892603251873201,
+      "seconds": 2.3
+    },
+    {
+      "trial": 65,
+      "feature_set": "phenology_only",
+      "model_type": "random_forest",
+      "n_features": 6,
+      "params": {
+        "n_estimators": 500,
+        "min_samples_leaf": 2,
+        "max_features": "sqrt",
+        "max_depth": 30,
+        "class_weight": "balanced"
+      },
+      "threshold": 0.5700000000000003,
+      "val_accuracy": 0.8108371503752071,
+      "val_f1": 0.7948419828770743,
+      "val_auc": 0.8734428693054361,
+      "seconds": 22.4
+    },
+    {
+      "trial": 66,
+      "feature_set": "phenology_only",
+      "model_type": "random_forest",
+      "n_features": 6,
+      "params": {
+        "n_estimators": 300,
+        "min_samples_leaf": 1,
+        "max_features": 0.7,
+        "max_depth": 20,
+        "class_weight": null
+      },
+      "threshold": 0.5700000000000003,
+      "val_accuracy": 0.8110320631517396,
+      "val_f1": 0.7946192140663065,
+      "val_auc": 0.8721262290602678,
+      "seconds": 23.5
+    },
+    {
+      "trial": 67,
+      "feature_set": "phenology_only",
+      "model_type": "random_forest",
+      "n_features": 6,
+      "params": {
+        "n_estimators": 300,
+        "min_samples_leaf": 2,
+        "max_features": "sqrt",
+        "max_depth": 20,
+        "class_weight": null
+      },
+      "threshold": 0.5100000000000002,
+      "val_accuracy": 0.8114218887048046,
+      "val_f1": 0.7976999477260847,
+      "val_auc": 0.876537165162419,
+      "seconds": 11.9
+    },
+    {
+      "trial": 68,
+      "feature_set": "phenology_only",
+      "model_type": "random_forest",
+      "n_features": 6,
+      "params": {
+        "n_estimators": 500,
+        "min_samples_leaf": 1,
+        "max_features": 0.7,
+        "max_depth": 30,
+        "class_weight": "balanced"
+      },
+      "threshold": 0.5800000000000003,
+      "val_accuracy": 0.8078160023389533,
+      "val_f1": 0.7914110429447853,
+      "val_auc": 0.8693079105303583,
+      "seconds": 39.0
+    },
+    {
+      "trial": 69,
+      "feature_set": "phenology_only",
+      "model_type": "random_forest",
+      "n_features": 6,
+      "params": {
+        "n_estimators": 500,
+        "min_samples_leaf": 4,
+        "max_features": "sqrt",
+        "max_depth": 20,
+        "class_weight": "balanced"
+      },
+      "threshold": 0.5200000000000002,
+      "val_accuracy": 0.8129811909170647,
+      "val_f1": 0.7989944485178591,
+      "val_auc": 0.8779969329592832,
+      "seconds": 20.6
+    },
+    {
+      "trial": 70,
+      "feature_set": "phenology_only",
+      "model_type": "random_forest",
+      "n_features": 6,
+      "params": {
+        "n_estimators": 300,
+        "min_samples_leaf": 2,
+        "max_features": 0.7,
+        "max_depth": 20,
+        "class_weight": "balanced"
+      },
+      "threshold": 0.6100000000000003,
+      "val_accuracy": 0.8105447812104083,
+      "val_f1": 0.7923076923076923,
+      "val_auc": 0.8735587607498879,
+      "seconds": 24.1
+    },
+    {
+      "trial": 71,
+      "feature_set": "phenology_only",
+      "model_type": "random_forest",
+      "n_features": 6,
+      "params": {
+        "n_estimators": 200,
+        "min_samples_leaf": 2,
+        "max_features": 0.7,
+        "max_depth": 30,
+        "class_weight": null
+      },
+      "threshold": 0.5800000000000003,
+      "val_accuracy": 0.8093753045512133,
+      "val_f1": 0.7931034482758621,
+      "val_auc": 0.870564939672879,
+      "seconds": 25.7
+    },
+    {
+      "trial": 72,
+      "feature_set": "phenology_only",
+      "model_type": "random_forest",
+      "n_features": 6,
+      "params": {
+        "n_estimators": 200,
+        "min_samples_leaf": 1,
+        "max_features": 0.7,
+        "max_depth": 40,
+        "class_weight": null
+      },
+      "threshold": 0.5700000000000003,
+      "val_accuracy": 0.8090829353864146,
+      "val_f1": 0.7934633632050606,
+      "val_auc": 0.8701821686366881,
+      "seconds": 16.1
+    },
+    {
+      "trial": 73,
+      "feature_set": "phenology_only",
+      "model_type": "xgboost",
+      "n_features": 6,
+      "params": {
+        "subsample": 0.7,
+        "reg_lambda": 0.5,
+        "n_estimators": 600,
+        "max_depth": 8,
+        "learning_rate": 0.08,
+        "colsample_bytree": 0.85
+      },
+      "threshold": 0.6000000000000003,
+      "val_accuracy": 0.8045999415261671,
+      "val_f1": 0.7902500261533634,
+      "val_auc": 0.8690973112804229,
+      "seconds": 5.8
+    },
+    {
+      "trial": 74,
+      "feature_set": "phenology_only",
+      "model_type": "xgboost",
+      "n_features": 6,
+      "params": {
+        "subsample": 0.85,
+        "reg_lambda": 1.0,
+        "n_estimators": 600,
+        "max_depth": 8,
+        "learning_rate": 0.05,
+        "colsample_bytree": 0.7
+      },
+      "threshold": 0.5000000000000002,
+      "val_accuracy": 0.8099600428808108,
+      "val_f1": 0.7988861386138614,
+      "val_auc": 0.8726631096424804,
+      "seconds": 5.0
+    },
+    {
+      "trial": 75,
+      "feature_set": "phenology_only",
+      "model_type": "xgboost",
+      "n_features": 6,
+      "params": {
+        "subsample": 1.0,
+        "reg_lambda": 1.0,
+        "n_estimators": 300,
+        "max_depth": 8,
+        "learning_rate": 0.02,
+        "colsample_bytree": 0.85
+      },
+      "threshold": 0.5600000000000003,
+      "val_accuracy": 0.8142481239645258,
+      "val_f1": 0.7976645435244162,
+      "val_auc": 0.8826208093604201,
+      "seconds": 2.5
+    },
+    {
+      "trial": 76,
+      "feature_set": "phenology_only",
+      "model_type": "xgboost",
+      "n_features": 6,
+      "params": {
+        "subsample": 0.85,
+        "reg_lambda": 1.0,
+        "n_estimators": 300,
+        "max_depth": 6,
+        "learning_rate": 0.05,
+        "colsample_bytree": 0.85
+      },
+      "threshold": 0.5000000000000002,
+      "val_accuracy": 0.8152226878471884,
+      "val_f1": 0.8022940563086548,
+      "val_auc": 0.878296511106051,
+      "seconds": 2.0
+    },
+    {
+      "trial": 77,
+      "feature_set": "phenology_only",
+      "model_type": "xgboost",
+      "n_features": 6,
+      "params": {
+        "subsample": 1.0,
+        "reg_lambda": 0.5,
+        "n_estimators": 300,
+        "max_depth": 6,
+        "learning_rate": 0.02,
+        "colsample_bytree": 1.0
+      },
+      "threshold": 0.5000000000000002,
+      "val_accuracy": 0.8143455803527921,
+      "val_f1": 0.7998739363378506,
+      "val_auc": 0.8830345279230815,
+      "seconds": 1.8
+    },
+    {
+      "trial": 78,
+      "feature_set": "phenology_only",
+      "model_type": "xgboost",
+      "n_features": 6,
+      "params": {
+        "subsample": 1.0,
+        "reg_lambda": 1.0,
+        "n_estimators": 1000,
+        "max_depth": 4,
+        "learning_rate": 0.02,
+        "colsample_bytree": 0.85
+      },
+      "threshold": 0.5500000000000003,
+      "val_accuracy": 0.8159048825650521,
+      "val_f1": 0.8002537802685841,
+      "val_auc": 0.8826679348681328,
+      "seconds": 4.4
+    },
+    {
+      "trial": 79,
+      "feature_set": "phenology_only",
+      "model_type": "xgboost",
+      "n_features": 6,
+      "params": {
+        "subsample": 0.7,
+        "reg_lambda": 0.5,
+        "n_estimators": 1000,
+        "max_depth": 8,
+        "learning_rate": 0.02,
+        "colsample_bytree": 0.7
+      },
+      "threshold": 0.5500000000000003,
+      "val_accuracy": 0.8112269759282721,
+      "val_f1": 0.7968962986264024,
+      "val_auc": 0.8753092183202961,
+      "seconds": 8.0
+    },
+    {
+      "trial": 80,
+      "feature_set": "phenology_only",
+      "model_type": "xgboost",
+      "n_features": 6,
+      "params": {
+        "subsample": 0.7,
+        "reg_lambda": 0.5,
+        "n_estimators": 300,
+        "max_depth": 4,
+        "learning_rate": 0.05,
+        "colsample_bytree": 0.7
+      },
+      "threshold": 0.47000000000000025,
+      "val_accuracy": 0.8159048825650521,
+      "val_f1": 0.8037402597402598,
+      "val_auc": 0.8819475388798761,
+      "seconds": 1.4
+    }
+  ],
+  "dataset": "data\\supervised\\training_samples.csv",
+  "model_path": "data\\supervised\\deforestation_v3_all_bands_multimodel.joblib"
+}
